@@ -3,11 +3,14 @@
 node_modules/*
 .DS_Store
 config.codekit
+
+# Custom Files to Remove in Later Dev Stages
 readme.html
 global-min.js
+.htaccess
+robots.txt
 
 *.log
-.htaccess
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
