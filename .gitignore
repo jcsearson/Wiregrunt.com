@@ -3,6 +3,7 @@
 node_modules/*
 .DS_Store
 config.codekit
+readme.html
 
 *.log
 # .htaccess
