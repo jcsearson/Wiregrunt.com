@@ -20,6 +20,7 @@
 }  /* /heading */
 
 header {
+	padding: $xxlarge-gap 0;
 	> a {
 		color: $lgreen;
 		font-size: $font-xxl;
@@ -70,7 +71,7 @@ header {
 }  /* .feature-article-container */
 
 .primary {
-	padding: $med-gap 0;
+	margin: $med-gap 0;
 	background: $dwhite;
 }  /* .primary */
 
@@ -97,14 +98,43 @@ header {
 		font-size: 1rem;
 		line-height: $lineh-large;
 	}  /* .post-excerpt */
+
 }  /* .blog-summary */
 
+.repost-article {
 
+	a {
+		display: inline-block;
+		background: $lblue;
+	padding: $large-gap;
+	margin: 0 $xxxlarge-gap $xxlarge-gap $large-gap;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+		.repost-title {
+			@include title-styles( 0 $med-gap $small-gap 0 );
+		}
+		.repost-excerpt {
+			padding-bottom: $med-gap;
+			margin: 0 10%;
+			img {
+				width: 100%;
+				display: inline-block;
+			}
+		}
+		&:hover, &:focus {
+			box-shadow: 0 0 1px 2px $gray;
+			transition: 0.1s linear text-shadow;
+			cursor: pointer;
+		}
+	}
+}
 
 .secondary {
-	margin-bottom: $xxlarge-gap;
+	margin: $med-gap $med-gap $xxlarge-gap 0;
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
 	background: lighten($lgray, 10%);
+	&:last-child {
+		margin: 0 $med-gap $xxlarge-gap 0;
+	}
 	.section-title {
 		letter-spacing: 1px;
 		word-spacing: 1px;
@@ -114,7 +144,7 @@ header {
 		a {
 			line-height: 1;
 			font-weight: 300;
-			color: $lgreen;
+			color: $blue;
 			font-size: 1.5rem;
 			&:hover, &:focus {
 				color: $blue;
@@ -140,6 +170,9 @@ header {
 		}  /* .article-title */
 	}  /* .side-content */
 }  /* .secondary */
+
+
+
 
 .inside-preview {
 	padding: 0;
@@ -250,8 +283,7 @@ footer {
 	 	margin: 0 auto;
 	 	display: inline;
 		.social-media-icon {
-			margin: 0 25%;
-			display: inline;
+			margin: 0 20%;
 		}  /* .social-media-icon */
 		.facebook-icon:hover .outer-icon,
 		.facebook-icon:focus .outer-icon {
