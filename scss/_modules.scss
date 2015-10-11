@@ -83,33 +83,6 @@ header {
 	background: $dwhite;
 }  /* .primary */
 
-.blog-post-summary {
-	padding: 0 $large-gap;
-	margin: 0 $med-gap $xxlarge-gap $med-gap;
-	.post-title {
-		@include title-styles( 0 $med-gap $small-gap 0 );
-		a {
-			font-weight: 300;
-
-			color: $lblack;
-			@include font-stack-header;
-			&:hover, &:focus {
-				text-shadow: 0 1px 2px $gray;
-				transition: 0.1s linear text-shadow;
-			}
-		}
-	}  /* .post-title */
-	.post-meta {
-		font-size: 1rem;
-	}  /* .post-meta */
-	.post-excerpt {
-		margin: 20px 0 50px 0;
-		font-size: 1rem;
-		line-height: $lineh-large;
-	}  /* .post-excerpt */
-
-}  /* .blog-summary */
-
 .repost-article {
 	a {
 		box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -140,7 +113,7 @@ header {
 .secondary {
 	display: block;
 	margin: $med-gap $med-gap $xxlarge-gap 0;
-	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
 	background: lighten($lgray, 10%);
 	&:last-child {
 		margin: 0 $med-gap $xxlarge-gap 0;
@@ -247,7 +220,7 @@ footer {
 					color: $white;
 					font-size: .85rem;
 					text-shadow: none;
-					@include font-stack-body;
+					@include font-stack-header;
 					&:hover, &:focus {
 						color: $lgreen;
 						transition: 0.1s linear color;
@@ -264,6 +237,7 @@ footer {
 			.author-note {
 				letter-spacing: 1px;
 				line-height: 1.2;
+				color: $lblue;
 				padding: 0 0 $super-gap 0;
 				font-size: $font-med;
 				@include font-stack-header;
@@ -282,6 +256,7 @@ footer {
 }  /* /footer */
 
 .connect-list {
+	width: 100%;
 	margin: $large-gap 0 0 0;
 	display: block;
 }  /* .connect-list */
@@ -289,8 +264,8 @@ footer {
 .social-connection {
 	width: 25%;
 	display: inline-block;
+	float: left;
 	 .social-media-anchor {
-	 	margin: 0 auto;
 	 	display: inline;
 		.social-media-icon {
 			margin: 0 20%;
