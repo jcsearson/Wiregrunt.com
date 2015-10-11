@@ -4,9 +4,10 @@ node_modules/*
 .DS_Store
 config.codekit
 readme.html
+global-min.js
 
 *.log
-# .htaccess
+.htaccess
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
