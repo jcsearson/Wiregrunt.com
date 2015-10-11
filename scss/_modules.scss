@@ -13,6 +13,7 @@
 /* ############## END-PLACEHOLDERS/MIXINS ##############  */
 
 .heading {
+	z-index: 999;
 	background: $lblack;
 	margin-bottom: $large-gap;
 	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.6);
@@ -20,9 +21,10 @@
 }  /* /heading */
 
 header {
-	padding: $xxlarge-gap 0;
+	padding: $large-gap 0;
 	> a {
 		color: $lgreen;
+		letter-spacing: 1px;
 		font-size: $font-xxl;
 		padding: 0 0 0 $large-gap;
 		text-shadow: 0 1px 1px $dblack;
@@ -31,8 +33,8 @@ header {
 		@include font-stack-body;
 		span {
 			top: 5px;
-			letter-spacing: 1px;
-			font-size: 1.75rem;
+			letter-spacing: 2px;
+			font-size: 1.5rem;
 			color: $dwhite;
 			position: relative;
 		}
@@ -40,7 +42,7 @@ header {
 }  /* /header */
 
 .menu {
-	padding: $super-gap $xsmall-gap $large-gap 0;
+	padding: $xxxlarge-gap $xsmall-gap $large-gap 0;
 }  /* .menu */
 
 .nav-list {
@@ -62,6 +64,12 @@ header {
 	}  /* .nav-item-box */
 }  /* .nav-list */
 
+.main-content {
+	top: 2*$xxxlarge-gap + $large-gap;
+	padding-bottom: $super-gap;
+	position: relative;
+}
+
 .feature-article-container {
 	box-shadow: 0 0 1px -4px rgba(0, 0, 0, 0.6);
 	background: $dwhite;
@@ -76,6 +84,7 @@ header {
 }  /* .primary */
 
 .blog-post-summary {
+	padding: 0 $large-gap;
 	margin: 0 $med-gap $xxlarge-gap $med-gap;
 	.post-title {
 		@include title-styles( 0 $med-gap $small-gap 0 );
@@ -102,14 +111,19 @@ header {
 }  /* .blog-summary */
 
 .repost-article {
-
 	a {
-		display: inline-block;
+		box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
 		background: $lblue;
-	padding: $large-gap;
-	margin: 0 $xxxlarge-gap $xxlarge-gap $large-gap;
-	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+		padding: $large-gap;
+		margin: 0 $xxxlarge-gap $xxlarge-gap $large-gap;
+		display: inline-block;
+		&:hover, &:focus {
+			box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+			transition: 0.2s linear all;
+			cursor: pointer;
+		}
 		.repost-title {
+			text-align: center;
 			@include title-styles( 0 $med-gap $small-gap 0 );
 		}
 		.repost-excerpt {
@@ -120,15 +134,11 @@ header {
 				display: inline-block;
 			}
 		}
-		&:hover, &:focus {
-			box-shadow: 0 0 1px 2px $gray;
-			transition: 0.1s linear text-shadow;
-			cursor: pointer;
-		}
 	}
 }
 
 .secondary {
+	display: block;
 	margin: $med-gap $med-gap $xxlarge-gap 0;
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
 	background: lighten($lgray, 10%);
@@ -176,9 +186,9 @@ header {
 
 .inside-preview {
 	padding: 0;
-	background: lighten($lgray, 10%);
+	background: $lblue;
+	border: 5px solid $blue;
 	.preview-title {
-		text-transform: uppercase;
 		@include title-styles( 0 $med-gap $small-gap $med-gap );
 		.gadget-title {
 			color: $lblack;
@@ -250,11 +260,11 @@ footer {
 		}
 		.author {
 			font-weight: 300;
-			padding: $super-gap $super-gap 0 0;
+			padding: $xxxlarge-gap $super-gap 0 0;
 			.author-note {
 				letter-spacing: 1px;
 				line-height: 1.2;
-				padding: 0 0 25px 0;
+				padding: 0 0 $super-gap 0;
 				font-size: $font-med;
 				@include font-stack-header;
 				a {
