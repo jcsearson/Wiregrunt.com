@@ -3,20 +3,6 @@
 node_modules/*
 .DS_Store
 config.codekit
-
-# Custom Files to Remove in Later Dev Stages
-readme.html
-global-min.js
-.htaccess
-robots.txt
-index.html
-*.css
-css/
-*.min
-*.jpg
-*.jpeg
-*.png
-
 *.log
 sitemap.xml
 sitemap.xml.gz
@@ -29,3 +15,17 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+
+# All additions go below this point
+# Custom Files to Remove in Later Dev Stages
+readme.html
+global-min.js
+.htaccess
+robots.txt
+index.html
+*.css
+css/
+*.min
+*.jpg
+*.jpeg
+*.png
