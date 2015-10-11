@@ -9,6 +9,13 @@ readme.html
 global-min.js
 .htaccess
 robots.txt
+index.html
+*.css
+css/
+*.min
+*.jpg
+*.jpeg
+*.png
 
 *.log
 sitemap.xml
