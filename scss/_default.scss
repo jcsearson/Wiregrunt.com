@@ -34,6 +34,7 @@ h5 {
 
 p {
   line-height: 1;
+  color: $lblack;
   font-size: $font-large;
   @include font-stack-body;
 }
@@ -41,6 +42,7 @@ p {
 a {
   text-decoration: none;
   display: inline-block;
+  color: $blue;
   @include font-stack-header;
 }
 
