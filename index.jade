@@ -1,0 +1,137 @@
+doctype default
+html(lang="en")
+
+	head
+		//- Typekit Font Request
+		include jades/typekits.jade
+		title WireGrunt.com
+		//- Metas
+		include jades/metas.jade
+		//- favicons
+		include jades/stylesheets.jade
+		//- <meta name='google-site-verification' content='4uYZbqUA80FY2H8m4TS7_Rfb7x_LpmXd6vpsddVGUHM' />
+
+	body
+		section.heading
+			div.head-container
+				header(role='banner')
+					a(href='http://searsino.com/') W<span>ire</span>G<span>runt</span>
+
+				nav.menu
+					ul.nav-list
+						li.nav-item-box
+							a(href='about') Articles
+						li.nav-item-box
+							a(href='blog') Inside
+						li.nav-item-box
+							a(href='resume') Wordpress
+						li.nav-item-box
+							a(href='contact-form') Security
+
+
+
+		div.main-content
+			section(class='primary' role='region')
+				article.blog-post-summary
+					h2.post-title
+						a(href='#') An htaccess Template
+					h4.post-meta.make-note In Wordpress by James Searson on October 10, 2015
+					p.post-excerpt
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique officia voluptatem saepe dolor iure praesentium laborum hic adipisci nam illo. Atque, eveniet tempore officia neque cum ipsa quaerat obcaecati nesciunt!....
+				article.blog-post-summary
+					h2.post-title
+						a(href='#') “FizzBuzz”
+					h4.post-meta.make-note In Technology by James Searson on June 4, 2015
+					p.post-excerpt
+						| For reasons unfathomable, I have come across a large number of social media stories and articles discussing how many programmers & developers (iOS & Web) are unable to solve the simple “FizzBuzz” task. I immediately had to implement my own solution just to prove personal validity as a self-taught web & iOS developer....
+				article.blog-post-summary
+					h2.post-title
+						a(href='#') Apache Localhost (Tutorial)
+					h4.post-meta.make-note In Technology by James Searson on June 4, 2015
+					p.post-excerpt
+						| I’m using <strong>PHP v5.5.14</strong> on a <strong>Retina Macbook Pro (mid-2014)</strong> that is running <strong></strong>OS X Yosemite. My problem was that I recieived a <strong>403 ERROR</strong> stating that permission was denied whenever attempting to access <strong>localhost/~userDirName/</strong>. My solution involves 3 simple steps...
+
+
+
+			section(class='secondary inside-preview' role='region')
+				h4.section-title
+						a(href="#") Inside Tech
+				article.blog-post-summary.side-content
+					h4.preview-title Inside of a <a href="#" class="gadget-title">Belkin 2.5G AC Router</span>
+					div.preview-block
+						a(href='#' target='_blank')
+							img(src="images/content/router-inside.jpg", alt="Preview of what's inside a tech device" class="device-preview")
+
+
+
+			section(class='secondary' role='region')
+				h4.section-title
+						a(href="#") Noteworthy Articles
+				article.blog-post-summary.side-content
+					p.article-title
+						a(href='http://www.bloomberg.com/bw/stories/2001-12-05/lamos-adventures-in-worldcom' target='_blank') Lamo's Adventures in WorldCom
+					p.article-title
+						a(href='http://www.wired.com/2015/10/see-jrr-tolkien-lord-of-the-rings-middle-earth-illustrations-for-first-time/' target='_blank') The Sketches that made Lord of the Rings
+					p.article-title
+						a(href='http://www.paulund.co.uk/creating-different-css3-box-shadows-effects' target='_blank') CSS Box Shadows Effects
+					p.article-title
+						a(href='http://www.toptal.com/php/10-most-common-mistakes-php-programmers-make/' target='_blank') 10 Common (PHP) Mistakes
+					p.article-title
+						a(href='http://www.sbnation.com/nfl/2015/8/7/9114747/joe-flacco-elite-gop-debate-cleveland/' target='_blank') What a guy with a Joe Flacco sign learned at the GOP debate
+
+
+
+
+		footer(role='contentinfo')
+			div.foot-wrap
+				div.recent-articles-footer
+					h5.foot-widget-head Recent Articles
+					h5.foot-widget-link
+						a(href="#") An htaccess Template
+					h5.foot-widget-link
+						a(href="#") "Fizzbuzz"
+					h5.foot-widget-link
+						a(href="#") Apache Localhost (Tutorial)
+					h5.foot-widget-link
+						a(href="#") Web Developer Self-sufficiency
+					h5.foot-widget-link
+						a(href="#") NSString to Read ASCII File
+				div.footer-nav
+					h5.foot-widget-head Quick Links
+					h5.foot-widget-link
+						a(href="#") Inside of Technology
+					h5.foot-widget-link
+						a(href="#") Wordpress
+					h5.foot-widget-link
+						a(href="#") Security
+					h5.foot-widget-link
+						a(href="#") About
+					h5.foot-widget-link
+						a(href="#") Contact
+				div.author
+					p.author-note
+						| Developed with a Custom Design in mind by <a href='http://searsino.com'>James</a>.
+					ul.connect-list
+						li.social-connection
+							a(href='https://www.facebook.com/jcsearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/facebook.svg
+
+						li.social-connection
+							a(href='https://twitter.com/GreatSearsino' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/twitter.svg
+
+						li.social-connection
+							a(href='https://www.linkedin.com/in/jamessearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/linkedin.svg
+
+						li.social-connection
+							a(href='https://github.com/jcsearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/github.svg
+
+
+
+		div.colophan
+			div.copyright
+				p &copy; 2015,  James C. Searson | All Rights Reserved
+
+include jades/scripts.jade

@@ -1,0 +1,86 @@
+html {
+    font-size: 100%;
+    line-height: $lineh-med;
+}
+
+body {
+  background: $dwhite;
+}  /* /body */
+
+h1 {
+  font-size: $font-xxxl;
+  @include font-stack-header;
+}
+
+h2 {
+  font-size: $font-xxl;
+  @include font-stack-header;
+}
+
+h3 {
+  font-size: $font-xl;
+  @include font-stack-header;
+}
+
+h4 {
+  font-size: $font-large;
+  @include font-stack-header;
+}
+
+h5 {
+  font-size: $font-med;
+  @include font-stack-header;
+}
+
+p {
+  line-height: 1;
+  font-size: $font-large;
+  @include font-stack-body;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  @include font-stack-header;
+}
+
+span {
+  display: inline-block;
+  @include font-stack-body;
+}
+
+li {
+  @include font-stack-body;
+}
+
+// Makes a piece of text stand out within a body of text
+em {
+  font-weight: 700;
+}
+
+.colored {  // used for the about.php page
+  color: $green;
+}
+
+// Makes a piece of text all uppercase characters
+.cap {
+  text-transform: uppercase;
+}
+
+// Makes a piece of text portray a sense of urgency
+.make-urgent {
+  font-weight: 700;
+  color: $red;
+  text-transform: uppercase;
+}
+
+i {
+  font-style: italic;
+}
+
+// Makes a piece of text fade out like a note to be added at end of body of text
+.make-note {
+  font-weight: 300;
+  font-style: italic;
+  color: $gray;
+}

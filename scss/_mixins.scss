@@ -1,0 +1,57 @@
+//Compensates for white flash from typekit font request.
+@mixin FOUTprevent {
+      	.wf-loading & {
+            visibility: hidden;
+      }
+}
+
+@-webkit-keyframes fontfix {
+    	from { opacity: 1; }
+    	to   { opacity: 1; }
+}
+
+//----------------------------------------FONTS--
+@mixin font-stack-header {
+  	font-family: "source-sans-pro",sans-serif;
+      @include FOUTprevent;
+}
+
+@mixin font-stack-body {
+      font-family: "private-sans-web",sans-serif;
+      @include FOUTprevent;
+}
+
+//----------------------------------------BREAKPOINTS--
+@mixin bp($point) {
+  	@if $point == pluto {
+    		@media (max-width: 1280px) { @content; }
+  	}
+  	@if $point == neptune {
+    		@media (max-width: 1100px) { @content; }
+  	}
+  	@if $point == uranus {
+    		@media (max-width: 1000px) { @content; }
+  	}
+  	@if $point == jupiter {
+    		@media (max-width: 925px) { @content; }
+ 	}
+  	@if $point == mars {
+    		@media (max-width: 850px) { @content; }
+  	}
+  	@if $point == earth {
+    		@media (max-width: 750px) { @content; }
+  	}
+  	@if $point == moon {
+    		@media (max-width: 700px) { @content; }
+  	}
+  	@if $point == venus {
+    		@media (max-width: 600px) { @content; }
+  	}
+  	@if $point == mercury {
+    		@media (max-width: 390px) { @content; }
+  	}
+  	/* Query below was Specially designed for use with the Susy grid */
+  	@if $point == drummer {
+    		@media (max-width: 47em) { @content; }
+  	}
+}

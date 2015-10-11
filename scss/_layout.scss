@@ -1,0 +1,97 @@
+//------------Susy setup -------------------------
+//====================================
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+	math: fluid,
+	output: float,
+	gutter-position: split,
+	container: 70em,
+	box-sizing: border-box,
+);
+//====================================
+
+body {
+	line-height: 1;
+	margin: 0 auto;
+}
+
+.heading {
+	width: 100%;
+}  /* .head-banner */
+
+.head-container {
+	@include container;
+	margin: 0 auto;
+}  /* .head-container */
+
+header {
+	padding: 2rem 0;
+	float: left;
+	display: inline-block;
+	@include span(4 of 12 first);
+}
+
+nav {
+	float: right;
+	.nav-list {
+		.nav-item-box {
+			display: inline-block;
+			> a {
+				padding: $xsmall-gap 0;
+			}
+		}
+	}
+}
+
+.feature-article-container {
+	@include container;
+	.feature-article {
+		@include span(12);
+		.post-excerpt {
+			@include span(9 of 12 first);
+			.read-button {
+				display: block;
+			}  /* .read-button */
+		}  /* .post-excerpt */
+		.feature-img-container {
+			@include span(3 of 12 last);
+		}  /* .feature-img-container */
+	}  /* .feature-article */
+}
+
+.main-content {
+	@include container;
+	margin: $large-gap auto 0 auto;
+}  /*.main-content*/
+
+.primary {
+	@include span(8 of 12 first);
+}  /* .primary */
+
+.secondary {
+	@include span(4 of 12 last);
+}  /* .secondary */
+
+footer {
+	width: 100%;
+	.foot-wrap {
+		@include container;
+		.recent-articles-footer {
+			@include span(4 of 12 first);
+		}
+		.foot-nav {
+			@include span(4 of 12);
+		}
+		.author {
+			@include span(4 of 12 last);
+		}
+	}  /* .foot-wrap */
+}  /* footer */
+
+.colophan {
+	@include container;
+	.copyright {
+		width: 100%;
+	}  /* .copyright */
+}  /* .colophan */
