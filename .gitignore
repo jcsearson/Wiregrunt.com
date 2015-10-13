@@ -18,6 +18,7 @@ wp-content/wp-cache-config.php
 
 # All additions go below this point
 # Custom Files to Remove in Later Dev Stages
+config.rb
 readme.html
 global-min.js
 .htaccess
