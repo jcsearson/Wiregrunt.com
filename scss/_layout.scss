@@ -2,7 +2,7 @@
 //====================================
 $susy: (
 	columns: 12,
-	gutters: 1/4,
+	gutters: 1/6,
 	math: fluid,
 	output: float,
 	gutter-position: split,
@@ -42,7 +42,7 @@ nav {
 		.nav-item-box {
 			display: inline-block;
 			> a {
-				padding: $xsmall-gap 0;
+				padding: $tiny-gap 0;
 			}
 		}
 	}

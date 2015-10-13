@@ -1,16 +1,34 @@
+//----------------------------------------SASS--
+@mixin title-styles( $class-padding ) {
+  padding: $class-padding;
+  margin: 0;
+  margin-bottom: $small-gap;
+  color: $lblack;
+}
+@mixin social-media-styles( $social-icon-color ) {
+  width: 60%;
+  margin: 0 20%;
+  fill: $social-icon-color;
+}
+@mixin sidebar-styles( $border-color, $background-color ) {
+  padding: $none;
+  background: $background-color;
+  border: $small-gap   solid $border-color;
+}
+
+//----------------------------------------FONTS--
+@-webkit-keyframes fontfix {
+      from { opacity: 1; }
+      to   { opacity: 1; }
+}
+
 //Compensates for white flash from typekit font request.
 @mixin FOUTprevent {
-      	.wf-loading & {
+        .wf-loading & {
             visibility: hidden;
       }
 }
 
-@-webkit-keyframes fontfix {
-    	from { opacity: 1; }
-    	to   { opacity: 1; }
-}
-
-//----------------------------------------FONTS--
 @mixin font-stack-header {
   	font-family: "source-sans-pro",sans-serif;
       @include FOUTprevent;

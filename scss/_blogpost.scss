@@ -5,7 +5,6 @@
 		@include title-styles( 0 $med-gap $small-gap 0 );
 		a {
 			font-weight: 300;
-
 			color: $lblack;
 			@include font-stack-header;
 			&:hover, &:focus {
@@ -15,33 +14,86 @@
 		}
 	}  /* .post-title */
 	.post-meta {
-		font-size: 1rem;
-		padding: 0 0 .5rem 0;
+		font-size: $font-med;
+		padding: 0 0 $small-gap 0;
 		letter-spacing: 1px;
 		word-spacing: 1px;
 		border-bottom: 1px solid $lblack;
 		@include font-stack-body;
+		.post-category {
+			padding: 0 0 $tiny-gap 0;
+			color: $dgray;
+		}
+		.post-author {
+			padding: 0 0 $tiny-gap 0;
+			color: $dgray;
+		}
 	}  /* .post-meta */
 	.post-styles {
-		.article-sub-heading {
-			padding: 0;
+		h4 {
+			padding: 0 0 $large-gap 0;
 			margin: 0;
-			font-size: 1.5rem;
+			font-size: $font-larger;
 			text-shadow: 0 1px 1px $lblack;
-			text-transform: uppercase;
-		}
-		.post-excerpt {
-			margin: 20px 0 50px 0;
+			/* text-transform: uppercase; */
+		}  /* <h4></h4> */
+		p {
+			margin: $large-gap 0 $xxxlarge-gap 0;
 			font-size: 1rem;
 			letter-spacing: 1px;
 			word-spacing: 2px;
 			line-height: $lineh-large;
 			@include font-stack-header;
-			code {
-				padding: 1px 2px 0 2px;
-				background: $lgray;
-				font-family: Consolas, Monaco, 'Andale Mono', monospace;
-			}
-		}  /* .post-excerpt */
-	}
-}  /* .blog-summary */
+		}  /* <p></p> */
+		code {
+			padding: $tiny-gap $small-gap 0 $small-gap;
+			text-shadow: 1px 1px 1px $white;
+			background: $lgray;
+			font-family: Consolas, Monaco, 'Andale Mono', monospace;
+		}  /* <code></code> */
+		strong {
+			text-shadow: 1px 1px 1px $gray;
+			font-size: $font-large;
+		}  /* <strong></strong> */
+		em {
+			font-weight: 300;
+			padding: 0 2px 0 0;
+			color: $dgray;
+			font-style: italic;
+		}  /* <em></em> */
+		ul {
+			margin: 0 0 $xxxlarge-gap 0;
+			li {
+				letter-spacing: 1px;
+				word-spacing: 1px;
+				padding: 4px 0;
+				font-size: $font-med;
+				color: $lblack;
+				@include font-stack-header;
+			}  /* <li></li> */
+		}  /* <ul></ul> */
+	}  /* .post-styles */
+	.media-share-post {
+		.media-share-post-title {
+			font-size: $font-larger;
+			text-shadow: 1px 1px 1px $lgray;
+			color: $lblack;
+			text-transform: uppercase;
+		}  /* .media-share-post-title */
+		.media-share-post-link {
+			font-size: $font-large;
+			padding: $tiny-gap $tiny-gap*2;
+			color: $lblack;
+		}  /* .media-share-post-link */
+		.facebook-share-post {
+			color: $lgray!important;
+			background: $facebook;
+		}  /* .facebook-share-post */
+		.twitter-share-post {
+			background: $twitter;
+		}  /* .twitter-share-post */
+		.google-share-post {
+			background: $google;
+		}  /* .google-share-post */
+	}  /* .media-share-post */
+}  /* .blog-post-summary */

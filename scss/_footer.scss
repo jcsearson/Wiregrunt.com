@@ -1,0 +1,126 @@
+footer {
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.6);
+	background: $lblack;
+	margin-top: $super-gap;
+	margin-bottom: $large-gap;
+	border-top: 0.3rem solid $blue;
+	border-bottom: 0.3rem solid $blue;
+	.foot-wrap {
+		width: 100%;
+		color: $lblue;
+		.recent-articles-footer,
+		.footer-nav {
+			padding: $large-gap;
+			display: inline-block;
+			float: left;
+			.foot-widget-head {
+				letter-spacing: 2px;
+				z-index: 999;
+				font-size: $font-med;
+				color: $blue;
+				background: $lblack;
+				margin: $large-gap $small-gap;
+				position: relative;
+			}  /* .foot-widget-head */
+			.foot-widget-link {
+				font-weight: 300;
+				margin: $small-gap;
+				a {
+					font-weight: 300;
+					letter-spacing: 2px;
+					word-spacing: 2px;
+					margin: 3px 0;
+					color: $white;
+					font-size: .85rem;
+					text-shadow: none;
+					@include font-stack-header;
+					&:hover, &:focus {
+						color: $lgreen;
+						transition: 0.1s linear color;
+					}
+				}
+			}  /* h5 */
+		}  /* .recent-articles-footer, .footer-nav */
+		.footer-nav {
+			padding-left: $super-gap;
+		}
+		.author {
+			font-weight: 300;
+			padding: $xxxlarge-gap $super-gap 0 0;
+			.author-note {
+				letter-spacing: 1px;
+				line-height: 1.2;
+				color: $lblue;
+				padding: 0 0 $med-gap 0;
+				font-size: $font-med;
+				@include font-stack-header;
+				a {
+					letter-spacing: 2px;
+					color: $lgreen;
+					@include font-stack-body;
+					&:hover, &:focus {
+						color: $green;
+						transition: 0.2s linear color;
+					}
+				}
+			}  /* .author-note */
+		}  /* .author-note */
+	}  /* .foot-wrap */
+}  /* /footer */
+
+.connect-list {
+	width: 90%;
+	margin: $large-gap 0 0 0;
+	display: block;
+}  /* .connect-list */
+
+.social-connection {
+	width: 25%;
+	display: inline-block;
+	float: left;
+	 .social-media-anchor {
+	 	display: inline;
+		.social-media-icon {
+			margin: 0 25%;
+		}  /* .social-media-icon */
+		.facebook-icon:hover .outer-icon,
+		.facebook-icon:focus .outer-icon {
+			@include social-media-styles( $facebook );
+		}
+		.twitter-icon:hover .outer-icon,
+		.twitter-icon:focus .outer-icon {
+			@include social-media-styles( $twitter );
+		}
+		.linkedin-icon:hover .outer-icon,
+		.linkedin-icon:focus .outer-icon {
+			@include social-media-styles( $linkedin );
+		}
+		.github-icon:hover .outer-icon,
+		.github-icon:focus .outer-icon {
+			@include social-media-styles( $github );
+		}
+		.facebook-icon .outer-icon,
+		.facebook-icon .outer-icon,
+		.twitter-icon .outer-icon,
+		.twitter-icon .outer-icon,
+		.linkedin-icon .outer-icon,
+		.linkedin-icon .outer-icon,
+		.github-icon .outer-icon,
+		.github-icon .outer-icon
+		{
+			fill: $dwhite;
+			transition: fill 0.2s linear;
+		}  /* &:hover, &:focus */
+	}  /* .social-media-anchor */
+}  /* .social-connection */
+
+.colophan {
+	.copyright {
+		padding: $large-gap 0;
+		color: $gray;
+		text-align: center;
+		p {
+			font-size: $font-med;
+		}
+	}  /* copyright */
+}  /* .colophan */
