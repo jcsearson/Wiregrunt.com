@@ -11,6 +11,7 @@
 		word-spacing: 1px;
 		background: $lblack;
 		padding: $small-gap $med-gap;
+		display: inline-block;
 		position: relative;
 		a {
 			line-height: 1;
@@ -21,7 +22,7 @@
 				color: $blue;
 				transition: 0.2s linear color;
 			}
-		}
+		}  /* <a></a> */
 	}  /* .section-title */
 	.side-content {
 		padding: 0;
@@ -29,14 +30,31 @@
 		.article-title {
 			@include title-styles( 0 $med-gap $small-gap $med-gap );
 			a {
+				padding-left: $small-gap;
 				letter-spacing: 1px;
 				line-height: 1.25;
 				color: $dwhite;
 				font-size: $font-med;
-				&:hover, &:focus {
+				position: relative;
+/* 				&:hover, &:focus {
 					color: $lgray;
 					transition: 0.1s linear color;
+				} */
+				&:hover .triangle-left, &:focus .triangle-left {
+					border-left: 7.5px solid $blue;
+					transition: 0.2s linear all;
 				}
+				.triangle-left {
+					left: -$small-gap;
+					top: $none;
+				    	width: 0;
+				    	height: 0;
+				    	border-top: 5px solid transparent;
+				    	border-bottom: 5px solid transparent;
+				    	border-left: 7.5px solid $lblack;
+				    	position: relative;
+				}  /* .triangle-left */
+
 			}
 		}  /* .article-title */
 	}  /* .side-content */
