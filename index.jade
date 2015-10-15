@@ -45,6 +45,7 @@ html(lang="en")
 					div.post-styles
 						p
 							| I finally managed to get Apple's new release of OS X El Capitan this afternoon.  Sure it took some willpower to put up with the absolute atrocity that is "the App Store".  Nonetheless, I have installed it and feel the need to say just a few things regarding my feelings on this years software update:
+						img(src="images/content/apple-blog-post.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
 						h4 The Bulletpoints of El Capitan
 						ul
 							li Upgrades to <strong>Photos</strong>
@@ -54,17 +55,40 @@ html(lang="en")
 							li Additions to <strong>Safari</strong>
 							li Upgrades to <strong>Mail</strong>
 							li Additions to overall <strong>UI</strong> (<em>user interface</em>)
+						a(href="#")
+							img(src="images/content/safari-apple-post.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
 						p
 							| Given a set of integers ranging from <code>1 - 99</code> (<em>inclusive</em>), write a program (any computer language you prefer) to output these values in sequential order. IF the value is a multiple of <code>3</code>, then replace its output with the word <code>Fizz</code>. If a value is a multiple of <code>5</code>, replace its output with the word <code>Buzz</code>. And finally, if a value is a multiple of both <code>3</code> and <code>5</code>, then replace its output with <code>Fizzbuzz</code>.
 						p
 							| A task that seems so simple! … right!? In lieu of my recent trek into the land of Objective-C, I chose to implement my solution as such. So without further ado, my solution to the <code>FizzBuzz</code> task:
+						a(href="#")
+							img(src="images/content/split-view-apple.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
 						p
 							| This gave me the desired output that looks something to this effect: <code>1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizzbuzz, ... , 94, Buzz, Fizz, 97, 98, Fizz</code>. There you have it, I can do something that many others apparently cannot!
+					div.blog-post-tags
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link Apple
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link El Capitan
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link Software Updates
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link Linux
 					div.media-share-post
-						h5.media-share-post-title Share This
-						a(class="media-share-post-link facebook-share-post" href="#") Facebook
-						a(class="media-share-post-link twitter-share-post" href="#") Twitter
-						a(class="media-share-post-link google-share-post" href="#") Google+
+						span.bar-border.bar-border-left
+						a(class="media-share-post-link facebook-share-post" href="#")
+							include images/icons/svg/blog-media/facebook-circle.svg
+						span.bar-border
+						a(class="media-share-post-link twitter-share-post" href="#")
+							include images/icons/svg/blog-media/twitter-circle.svg
+						span.bar-border
+						a(class="media-share-post-link google-share-post" href="#")
+							include images/icons/svg/blog-media/google-circle.svg
+						span.bar-border.bar-border-right
 
 			section(class='secondary inside-preview' role='region')
 				article.blog-post-summary.side-content
@@ -78,15 +102,15 @@ html(lang="en")
 			section(class='secondary' role='region')
 				article.article-links.side-content
 					p.article-title
-						<a href='http://www.bloomberg.com/bw/stories/2001-12-05/lamos-adventures-in-worldcom' target='_blank'><span class="triangle-left"></span>Lamo's Adventures in WorldCom</a>
+						<span class="triangle-left"></span><a href='http://www.bloomberg.com/bw/stories/2001-12-05/lamos-adventures-in-worldcom' target='_blank'>Lamo's Adventures in WorldCom</a>
 					p.article-title
-						<a href='http://www.wired.com/2015/10/see-jrr-tolkien-lord-of-the-rings-middle-earth-illustrations-for-first-time/' target='_blank'><span class="triangle-left"></span>The Sketches that made Lord of the Rings</a>
+						<span class="triangle-left"></span><a href='http://www.wired.com/2015/10/see-jrr-tolkien-lord-of-the-rings-middle-earth-illustrations-for-first-time/' target='_blank'>The Sketches that made Lord of the Rings</a>
 					p.article-title
-						<a href='http://www.paulund.co.uk/creating-different-css3-box-shadows-effects' target='_blank'><span class="triangle-left"></span>CSS Box Shadows Effects</a>
+						<span class="triangle-left"></span><a href='http://www.paulund.co.uk/creating-different-css3-box-shadows-effects' target='_blank'>CSS Box Shadows Effects</a>
 					p.article-title
-						<a href='http://www.toptal.com/php/10-most-common-mistakes-php-programmers-make/' target='_blank'><span class="triangle-left"></span>10 Common (PHP) Mistakes</a>
+						<span class="triangle-left"></span><a href='http://www.toptal.com/php/10-most-common-mistakes-php-programmers-make/' target='_blank'>10 Common (PHP) Mistakes</a>
 					p.article-title
-						<a href='http://www.sbnation.com/nfl/2015/8/7/9114747/joe-flacco-elite-gop-debate-cleveland/' target='_blank'><span class="triangle-left"></span>What a guy with a Joe Flacco sign learned at the GOP debate</a>
+						<span class="triangle-left"></span><a href='http://www.sbnation.com/nfl/2015/8/7/9114747/joe-flacco-elite-gop-debate-cleveland/' target='_blank'>What a guy with a Joe Flacco sign learned at the GOP debate</a>
 
 
 
@@ -123,19 +147,19 @@ html(lang="en")
 					ul.connect-list
 						li.social-connection
 							a(href='https://www.facebook.com/jcsearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/facebook.svg
+								include ./images/icons/svg/footer-media/facebook.svg
 
 						li.social-connection
 							a(href='https://twitter.com/GreatSearsino' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/twitter.svg
+								include ./images/icons/svg/footer-media/twitter.svg
 
 						li.social-connection
 							a(href='https://www.linkedin.com/in/jamessearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/linkedin.svg
+								include ./images/icons/svg/footer-media/linkedin.svg
 
 						li.social-connection
 							a(href='https://github.com/jcsearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/github.svg
+								include ./images/icons/svg/footer-media/github.svg
 
 
 
