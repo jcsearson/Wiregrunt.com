@@ -22,7 +22,7 @@ html(lang="en")
 						li.nav-item-box
 							a(href='about') Articles
 						li.nav-item-box
-							a(href='blog') Inside
+							a(href='blog') Development
 						li.nav-item-box
 							a(href='resume') Wordpress
 						li.nav-item-box
@@ -40,8 +40,8 @@ html(lang="en")
 							img(src="images/content/how-dns-works.png", alt="How DNS Works Comic Boook by DNSimple")
 				article.blog-post-summary
 					h2.post-title
-						a(href='#') Apple Might be Moving Back in the Right Direction | OS X El Capitan
-					h4.post-meta.make-note In <a href="#" class="post-category">Web News</a> by <a href="#" class="post-author">James Searson</a> on October 10, 2015
+						a(href='#') Apple's Big Update | El Capitan
+					h4.post-meta.make-note In <a href="#" class="post-category">Software</a> by <a href="#" class="post-author">James Searson</a> on October 10, 2015
 					div.post-styles
 						p
 							| I finally managed to get Apple's new release of OS X El Capitan this afternoon.  Sure it took some willpower to put up with the absolute atrocity that is "the App Store".  Nonetheless, I have installed it and feel the need to say just a few things regarding my feelings on this years software update:
@@ -55,16 +55,50 @@ html(lang="en")
 							li Additions to <strong>Safari</strong>
 							li Upgrades to <strong>Mail</strong>
 							li Additions to overall <strong>UI</strong> (<em>user interface</em>)
+						p
+							| There were certainly some good things done with this update.  However a common theme of the recent software updates has been generally to adress the right issues with the wrong solution!  Observe:
+						p
+							| The first item addressed was that of the Photos application.  Apple issued the following <a href="http://www.apple.com/osx/whats-new/">statement</a> about this: "<em>Give your photos a more personal touch with third-party editing tools. And with enhanced organization capabilities, support for the new Live Photos format, and faster performance, the Photos app gets even better.</em>"
 						a(href="#")
-							img(src="images/content/safari-apple-post.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+							img(src="images/content/photos-capitan.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
 						p
-							| Given a set of integers ranging from <code>1 - 99</code> (<em>inclusive</em>), write a program (any computer language you prefer) to output these values in sequential order. IF the value is a multiple of <code>3</code>, then replace its output with the word <code>Fizz</code>. If a value is a multiple of <code>5</code>, replace its output with the word <code>Buzz</code>. And finally, if a value is a multiple of both <code>3</code> and <code>5</code>, then replace its output with <code>Fizzbuzz</code>.
+							| As someone who avoids usuing photo apps issued by Apple and Google, this did not have any particular significance to me.  I tend to move away from this type of software because of the idea that I don't feel comfortable with these companies having so much control over personal information that I store on my computer.
 						p
-							| A task that seems so simple! … right!? In lieu of my recent trek into the land of Objective-C, I chose to implement my solution as such. So without further ado, my solution to the <code>FizzBuzz</code> task:
+							| The next item addressed was one that I can firmly stand behind, as it really does make the Notes app much more viable as an option when taking down general information.  If, for example, you want to add a website link to a note in your Notes app, all you have to do is click on the share link (<em>only works in Safari</em>) and a formatted block will be added:
 						a(href="#")
-							img(src="images/content/split-view-apple.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+							img(src="images/content/share-note.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+						a(href="#")
+							img(src="images/content/notes-safari.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
 						p
-							| This gave me the desired output that looks something to this effect: <code>1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizzbuzz, ... , 94, Buzz, Fizz, 97, 98, Fizz</code>. There you have it, I can do something that many others apparently cannot!
+							| A new feature was added to <strong>Maps</strong> which incorporates the public transit system.  Now one can view maps, schedules, and directions of basic public transit right from the app...  this certainly is a good way to help push a more green world (<em>more carpool/bus/train, less cars</em>) and therefore I must approve.
+						a(href="#")
+							img(src="images/content/public-transit.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+						p
+							| A spotlight update was also included in El Capitan.  Before going into it, I should mention I've always been an avid spotlight user.  The premise behind using a search bar that can go through any specified series of files and query your search term is a GREAT feature and one that I use often and everywhere.  The gist of what they updated was the inclusion of a more formal search syntax as well as more options for locations to query.
+						a(href="#")
+							img(src="images/content/spotlight-capitan.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+						p
+							| An updated browser was another such inclusion for El Capitan.  Apple added a key feature which really hit home for me.  The ability to mute any given tab has been something i've always desired, something that is not an easy fix through extensions or apps.  I'm sure everyone can think of that time they were on a site and for some reason that ad in the background would keep playing but you couldn't find a way to stop it...
+						a(href="#")
+							img(src="images/content/safari-sound.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+						p
+							| Mail received an update as well.  Apple states, "<em>Improved full-screen support and swipe gestures in Mail let you make quick work of your correspondence. OS X also helps you manage your calendar and keep your contacts up to date, right from your inbox.</em>"  So nothing big here (<em>atleast as far as I'm concerned</em>).
+						p
+							| The big update which I found rather superfluous was a split screen ability.  Namely you now have the option of creating to destops that share a single screen.  All you have to do is "<em>click and hold</em>" on the green button in the top left corner and you will be asked to select the two applications you wish to display simultaneously.
+						p
+							| Apple did one thing properly, which was address an issue which needed attention.  Split screen capability has always been something that everyone wanted but could never have.  And in the meantime, Microsoft users have been able to split screens easily via a simple macro.
+						p
+							| Apples attemp incorporates two desktops into one screen.  And thats my big problem with it.  I dont want 2 desktops.  I just want ONE desktop with two applications easily moved to share the single screen.  It's a pain trying to undo two desktops and honestly feels like for that reason this is not worth the effort.
+						a(href="#")
+							img(src="images/content/split-screen-apple-2.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+						a(href="#")
+							img(src="images/content/split-screen-apple.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+						p
+							| Why bother with the nusence that is split screen capability through Apple when you can use something like <a href="https://www.spectacleapp.com/" target="_blank"><strong>Spectacle</strong></a>, a free app, which will let you maneuver applications easily with a simple command macro.  It essentially gives you a Window-like capability right within the OS desktop.  I simply bring an app to the front, use <code>'cmd' + arrowKey</code> and the window sizes itself accordingly.  You wont ever have to deal with eliminating 2 desktops and going back to your default again.
+						a(href="#")
+							img(src="images/content/split-screen.png", alt="Desktop Running the New Apple Software Update Known as El Capitan")
+						p
+							| Overall I see El Capitan as addressing the right issues but not with the right solution.  A good start guys, but try again.  In the mean time I will continue using my workarounds to get by in everyday life.
 					div.blog-post-tags
 						a(class="media-tag-link" href="#")
 							include images/icons/svg/blog-media/svg-tag.svg
@@ -89,26 +123,35 @@ html(lang="en")
 						a(class="media-share-post-link google-share-post" href="#")
 							include images/icons/svg/blog-media/google-circle.svg
 						span.bar-border.bar-border-right
+					div.user-comment-box
+						form(class="reply authenticated")
+							div(class="postbox")
+							div(class="avatar")
+							div(class="textarea-wrapper" data-role="textarea" dir="auto")
 
-			section(class='secondary inside-preview' role='region')
-				article.blog-post-summary.side-content
-					div.preview-block
-						a(href='#' target='_blank')
-							img(src="images/content/router-inside.jpg" alt="Preview of what's inside a tech device" class="device-preview")
-							h5.guess-device Can You Guess What Uses This?
+			//- section(class='secondary inside-preview' role='region')
+			//- 	article.blog-post-summary.side-content
+			//- 		div.preview-block
+			//- 			a(href='#' target='_blank')
+			//- 				img(src="images/content/router-inside.jpg" alt="Preview of what's inside a tech device" class="device-preview")
+			//- 				h5.guess-device Can You Guess What Uses This?
 
-
+			section(class='secondary' role='region')
+				article.article-links.subscription-block
+					p
+						| Get Informed:
+					<input class="email-input" type="text" placeholder="eMail">
 
 			section(class='secondary' role='region')
 				article.article-links.side-content
 					p.article-title
-						<span class="triangle-left"></span><a href='http://www.bloomberg.com/bw/stories/2001-12-05/lamos-adventures-in-worldcom' target='_blank'>Lamo's Adventures in WorldCom</a>
+						<span class="triangle-left"></span><a href='http://www.bloomberg.com/bw/stories/2001-12-05/lamos-adventures-in-worldcom' target='_blank'>Adrian Lamo's Adventures in WorldCom</a>
 					p.article-title
 						<span class="triangle-left"></span><a href='http://www.wired.com/2015/10/see-jrr-tolkien-lord-of-the-rings-middle-earth-illustrations-for-first-time/' target='_blank'>The Sketches that made Lord of the Rings</a>
 					p.article-title
-						<span class="triangle-left"></span><a href='http://www.paulund.co.uk/creating-different-css3-box-shadows-effects' target='_blank'>CSS Box Shadows Effects</a>
+						<span class="triangle-left"></span><a href='http://www.paulund.co.uk/creating-different-css3-box-shadows-effects' target='_blank'>A Closer Look at CSS Box Shadows Effects</a>
 					p.article-title
-						<span class="triangle-left"></span><a href='http://www.toptal.com/php/10-most-common-mistakes-php-programmers-make/' target='_blank'>10 Common (PHP) Mistakes</a>
+						<span class="triangle-left"></span><a href='http://www.toptal.com/php/10-most-common-mistakes-php-programmers-make/' target='_blank'>10 Common (PHP) Mistakes That Developers Often Make</a>
 					p.article-title
 						<span class="triangle-left"></span><a href='http://www.sbnation.com/nfl/2015/8/7/9114747/joe-flacco-elite-gop-debate-cleveland/' target='_blank'>What a guy with a Joe Flacco sign learned at the GOP debate</a>
 
@@ -165,6 +208,6 @@ html(lang="en")
 
 		div.colophan
 			div.copyright
-				p &copy; 2015,  Searsino | All Rights Reserved
+				p &copy; 2015,  Searsino | All Rights Reserved.
 
 include jades/scripts.jade
