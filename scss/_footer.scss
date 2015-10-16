@@ -121,6 +121,7 @@ footer {
 		text-align: center;
 		p {
 			font-size: $font-med;
+			@include font-stack-header;
 		}
 	}  /* copyright */
 }  /* .colophan */
