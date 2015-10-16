@@ -1,5 +1,6 @@
 .blog-post-summary {
-	padding: 0 $large-gap;
+	background: $white;
+	padding: $xlarge-gap $large-gap;
 	margin: 0 $med-gap $xxlarge-gap $med-gap;
 	.post-title {
 		@include title-styles( 0 $med-gap $small-gap 0 );
@@ -81,6 +82,7 @@
 			}  /* <li></li> */
 		}  /* <ul></ul> */
 		img {
+			margin: $med-gap 0;
 			width: 100%;
 			box-shadow: 0 0 1px 1px $lgray;
 			height: auto;
@@ -93,6 +95,9 @@
 	}  /* .post-styles */
 	.blog-post-tags {
 		width: 100%;
+		padding: $large-gap 0;
+		border-top: 4px solid $gray;
+		border-bottom: 1px solid $gray;
 		margin: $xxlarge-gap 0;
 		.media-tag-link {
 			margin: 0 $small-gap;
