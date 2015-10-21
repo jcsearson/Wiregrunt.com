@@ -16,7 +16,7 @@ header {
 		text-shadow: 0 1px 1px $dblack;
 		position: relative;
 		text-transform: uppercase;
-		@include font-stack-body;
+		@include font-stack-brand;
 		span {
 			top: 5px;
 			letter-spacing: 2px;
@@ -28,7 +28,7 @@ header {
 }  /* /header */
 
 .menu {
-	padding: $xxxlarge-gap $tiny-gap $large-gap 0;
+	padding: 2.25rem $tiny-gap $large-gap 0;
 }  /* .menu */
 
 .nav-list {
@@ -38,10 +38,10 @@ header {
 			letter-spacing: 2px;
 			line-height: 1;
 			color: $dwhite;
-			padding: $small-gap 0;
-			font-size: $font-med;
+			padding: $med-gap 0 $small-gap 0;
+			font-size: $font-small;
 			text-transform: uppercase;
-			@include font-stack-body;
+			@include font-stack-brand;
 			&:hover, &:focus {
 				border-bottom: 1px solid $lgreen;
 				transition: 0.1s linear all;
