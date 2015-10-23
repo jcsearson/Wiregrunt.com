@@ -2,14 +2,14 @@
 	top: 2*$xxxlarge-gap + $large-gap;
 	padding-bottom: $super-gap;
 	position: relative;
-}
+}   /* .main-content */
 
 .feature-article-container {
 	box-shadow: 0 0 1px -4px rgba(0, 0, 0, 0.6);
 	background: $dwhite;
 	a img {
 		width: 100%;
-	}
+	}  /* a img */
 }  /* .feature-article-container */
 
 .primary {
@@ -28,18 +28,18 @@
 			box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
 			transition: 0.2s linear all;
 			cursor: pointer;
-		}
+		}  /* a:hover, a:focus */
 		.repost-title {
 			text-align: center;
 			@include title-styles( 0 $med-gap $small-gap 0 );
-		}
+		}  /* .repost-title */
 		.repost-excerpt {
 			padding-bottom: $med-gap;
 			margin: 0 10%;
 			img {
 				width: 100%;
 				display: inline-block;
-			}
-		}
-	}
-}
+			}  /* <img> */
+		}  /* .repost-excerpt */
+	}  /* <a></a> */
+}  /* .repost-article */
