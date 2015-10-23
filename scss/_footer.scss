@@ -37,13 +37,13 @@ footer {
 					&:hover, &:focus {
 						color: $lgreen;
 						transition: 0.1s linear color;
-					}
-				}
-			}  /* h5 */
+					}  /* a:hover, a:focus */
+				}  /* <a></a> */
+			}  /* .foot-widget-link */
 		}  /* .recent-articles-footer, .footer-nav */
 		.footer-nav {
 			padding-left: $super-gap;
-		}
+		}  /* .footer-nav */
 		.author {
 			font-weight: 300;
 			padding: $xxxlarge-gap $super-gap 0 0;
@@ -61,16 +61,16 @@ footer {
 					&:hover, &:focus {
 						color: $green;
 						transition: 0.2s linear color;
-					}
-				}
+					}  /* a:hover, a:focus */
+				}  /* <a></a> */
 			}  /* .author-note */
-		}  /* .author-note */
+		}  /* .author */
 	}  /* .foot-wrap */
-}  /* /footer */
+}  /* <footer></footer> */
 
 .connect-list {
 	width: 90%;
-	margin: $large-gap 0 0 0;
+	margin: $large-gap $none $none $none;
 	display: block;
 }  /* .connect-list */
 
@@ -86,19 +86,19 @@ footer {
 		.facebook-icon:hover .outer-icon,
 		.facebook-icon:focus .outer-icon {
 			@include social-media-styles( $facebook );
-		}
+		}  /* .facebook-icon:hover .outer-icon, .facebook-icon:focus .outer-icon */
 		.twitter-icon:hover .outer-icon,
 		.twitter-icon:focus .outer-icon {
 			@include social-media-styles( $twitter );
-		}
+		}  /* .twitter-icon:hover .outer-icon, .twitter-icon:focus .outer-icon */
 		.linkedin-icon:hover .outer-icon,
 		.linkedin-icon:focus .outer-icon {
 			@include social-media-styles( $linkedin );
-		}
+		}  /* .linkedin-icon:hover .outer-icon, .linkedin-icon:focus .outer-icon */
 		.github-icon:hover .outer-icon,
 		.github-icon:focus .outer-icon {
 			@include social-media-styles( $github );
-		}
+		}  /* .github-icon:hover .outer-icon, .github-icon:focus .outer-icon */
 		.facebook-icon .outer-icon,
 		.facebook-icon .outer-icon,
 		.twitter-icon .outer-icon,
@@ -110,18 +110,18 @@ footer {
 		{
 			fill: $dwhite;
 			transition: fill 0.2s linear;
-		}  /* &:hover, &:focus */
+		}  /* .outer-icon */
 	}  /* .social-media-anchor */
 }  /* .social-connection */
 
 .colophan {
 	.copyright {
-		padding: $large-gap 0;
+		padding: $large-gap $none;
 		color: $gray;
 		text-align: center;
 		p {
 			font-size: $font-med;
 			@include font-stack-header;
-		}
+		}  /* <p></p> */
 	}  /* copyright */
 }  /* .colophan */

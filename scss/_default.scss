@@ -62,35 +62,32 @@ em {
 
 .colored {  // used for the about.php page
   color: $green;
-}
+}  /* .colored */
 
 // Makes a piece of text all uppercase characters
 .cap {
   text-transform: uppercase;
-}
+}  /* .cap */
 
 // Makes a piece of text portray a sense of urgency
 .make-urgent {
   font-weight: 700;
   color: $red;
   text-transform: uppercase;
-}
+}  /* .make-urgent */
 
+em,
 i {
   font-style: italic;
-}
+}  /* <em></em>, <i></i> */
 
 // Makes a piece of text fade out like a note to be added at end of body of text
 .make-note {
   font-weight: 300;
   font-style: italic;
   color: $gray;
-}
+}  /* .make-note */
 
 .make-blue {
   color: $blue;
-}
-
-.blue-border {
-  border-bottom: 0.3rem solid $lgreen!important;
-}
+}  /* .make-blue */

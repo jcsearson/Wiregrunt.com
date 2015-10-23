@@ -10,7 +10,7 @@
 				text-shadow: 0 1px 2px $gray;
 				color: $lblack;
 				@include font-stack-header;
-			}
+			}  /* <a></a> */
 		}  /* .post-title */
 		.post-meta {
 			letter-spacing: 1px;
@@ -24,17 +24,17 @@
 				color: $blue;
 				&:hover, &:focus {
 					color: $lblack;
-					transition: 0.1s linear color;
-				}
-			}
+					transition: 0.2s linear color;
+				}  /* .post-category:hover, .post-category:focus */
+			}  /* .post-category */
 			.post-author {
 				padding: 0 0 $tiny-gap 0;
 				color: $blue;
 				&:hover, &:focus {
 					color: $lblack;
-					transition: 0.1s linear color;
-				}
-			}
+					transition: 0.2s linear color;
+				}  /* .post-author:hover, .post-author:focus */
+			}  /* .post-author */
 		}  /* .post-meta */
 	}  /* .meta-box */
 	.post-styles {
@@ -43,7 +43,6 @@
 			margin: $none;
 			font-size: $font-larger;
 			text-shadow: 0 1px 1px $lblack;
-			/* text-transform: uppercase; */
 		}  /* <h4></h4> */
 		p {
 			font-size: 1rem;
@@ -96,12 +95,7 @@
 			margin: $med-gap 0;
 			box-shadow: 0 0 1px 1px $lgray;
 			height: auto;
-		}
-		a {
-			img {
-
-			}
-		}
+		}  /* <img> */
 	}  /* .post-styles */
 	.blog-post-tags {
 		width: 100%;
@@ -115,7 +109,7 @@
 			&:hover, &:focus {
 				color: $lblack;
 				transition: 0.1s linear color;
-			}
+			}  /* .media-tag-link:hover, .media-tag-link:focus */
 			.blog-post-tag-icon {
 				width: $med-gap;
 				fill: $dgray;
@@ -135,9 +129,9 @@
 			top: $small-gap;
 			margin: 0 $tiny-gap;
 			position: relative;
-			 .svg-share-post {
+			.svg-share-post {
 				fill: $lblack;
-			}
+			}  /* .svg-share-post */
 		}  /* .media-share-post-link */
 		.bar-border {
 			bottom: $small-gap;
@@ -155,19 +149,19 @@
 			&:hover, &:focus {
 				fill: $facebook;
 				transition: 0.2s linear fill;
-			}
+			}  /* .facebook-share-post:hover, .facebook-share-post:focus */
 		}  /* .facebook-share-post */
 		.blog-svg-twitter {
 			&:hover, &:focus {
 				fill: $twitter;
 				transition: 0.2s linear fill;
-			}
+			}  /* .twitter-share-post:hover, .twitter-share-post:focus */
 		}  /* .twitter-share-post */
 		.blog-svg-google {
 			&:hover, &:focus {
 				fill: $google;
 				transition: 0.2s linear fill;
-			}
-		}  /* .google-share-post */
+			}  /* .blog-svg-google:hover, .blog-svg-google:focus */
+		}  /* .blog-svg-google */
 	}  /* .media-share-post */
 }  /* .blog-post-summary */
