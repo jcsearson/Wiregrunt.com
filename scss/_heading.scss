@@ -1,16 +1,16 @@
 .heading {
 	z-index: 999;
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.6);
 	background: $lblack;
 	margin-bottom: $large-gap;
-	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.6);
 	border-bottom: 0.3rem solid $blue;
 }  /* .heading */
 
 header {
 	padding: $large-gap 0;
 	> a {
-		color: $lgreen;
 		letter-spacing: 1px;
+		color: $lgreen;
 		font-size: $font-xxl;
 		padding: 0 0 0 $large-gap;
 		text-shadow: 0 1px 1px $dblack;
@@ -23,7 +23,7 @@ header {
 			font-size: 1.5rem;
 			color: $dwhite;
 			position: relative;
-		}
+		}  /* <span></span> */
 	}  /* > a */
 }  /* /header */
 
@@ -45,7 +45,7 @@ header {
 			&:hover, &:focus {
 				border-bottom: 1px solid $lgreen;
 				transition: 0.1s linear all;
-			}
-		}
+			}  /* a:hover, a:focus */
+		}  /* <a></a> */
 	}  /* .nav-item-box */
 }  /* .nav-list */
