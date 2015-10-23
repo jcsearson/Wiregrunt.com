@@ -7,16 +7,16 @@
 			@include title-styles( 0 $med-gap $small-gap 0 );
 			a {
 				font-weight: 300;
-				color: $lblack;
 				text-shadow: 0 1px 2px $gray;
+				color: $lblack;
 				@include font-stack-header;
 			}
 		}  /* .post-title */
 		.post-meta {
-			font-size: $font-med;
-			padding: 0 0 $small-gap 0;
 			letter-spacing: 1px;
 			word-spacing: 1px;
+			font-size: $font-med;
+			padding: 0 0 $small-gap 0;
 			border-bottom: 1px solid $lblack;
 			@include font-stack-body;
 			.post-category {
@@ -40,16 +40,16 @@
 	.post-styles {
 		h4 {
 			padding: $large-gap 0;
-			margin: 0;
+			margin: $none;
 			font-size: $font-larger;
 			text-shadow: 0 1px 1px $lblack;
 			/* text-transform: uppercase; */
 		}  /* <h4></h4> */
 		p {
-			margin: $large-gap 0 $xxxlarge-gap 0;
 			font-size: 1rem;
 			letter-spacing: 1px;
 			word-spacing: 2px;
+			margin: $large-gap 0 $xxxlarge-gap 0;
 			line-height: $lineh-large;
 			@include font-stack-header;
 		}  /* <p></p> */
@@ -81,19 +81,19 @@
 			}  /* <li></li> */
 		}  /* <ul></ul> */
 		li {
-			list-style-image: url(../images/icons/png/lightning.png);
 			line-height: 1.5rem;
-			list-style-position: inside;
 			letter-spacing: 1px;
 			word-spacing: 1px;
 			padding: 2px 0 4px 0;
+			list-style-image: url(../images/icons/png/lightning.png);
 			font-size: $font-med;
 			color: $lblack;
+			list-style-position: inside;
 			@include font-stack-header;
 		}  /* <li></li> */
 		img {
-			margin: $med-gap 0;
 			width: 100%;
+			margin: $med-gap 0;
 			box-shadow: 0 0 1px 1px $lgray;
 			height: auto;
 		}
