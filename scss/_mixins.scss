@@ -1,20 +1,20 @@
 //----------------------------------------SASS--
 @mixin title-styles( $class-padding ) {
-  padding: $class-padding;
-  margin: 0;
-  margin-bottom: $small-gap;
-  color: $lblack;
-}
+      padding: $class-padding;
+      margin: 0;
+      margin-bottom: $small-gap;
+      color: $lblack;
+}  /* title-styles */
 @mixin social-media-styles( $social-icon-color ) {
-  width: 60%;
-  margin: 0 20%;
-  fill: $social-icon-color;
-}
+      width: 60%;
+      margin: 0 20%;
+      fill: $social-icon-color;
+}  /* social-media-styles */
 @mixin sidebar-styles( $border-color, $background-color ) {
-  padding: $none;
-  background: $background-color;
-  border: $small-gap   solid $border-color;
-}
+      padding: $none;
+      background: $background-color;
+      border: $small-gap solid $border-color;
+}  /* sidebar-styles */
 
 //----------------------------------------FONTS--
 @-webkit-keyframes fontfix {
@@ -32,17 +32,17 @@
 @mixin font-stack-brand {
       font-family: 'PT Sans', sans-serif;
       @include FOUTprevent;
-}
+}  /* brand */
 
 @mixin font-stack-header {
   	font-family: "source-sans-pro",sans-serif;
       @include FOUTprevent;
-}
+}  /* header */
 
 @mixin font-stack-body {
       font-family: "private-sans-web",sans-serif;
       @include FOUTprevent;
-}
+}  /* body */
 
 //----------------------------------------BREAKPOINTS--
 @mixin bp($point) {
