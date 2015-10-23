@@ -1,43 +1,42 @@
 .blog-post-summary {
 	background: $white;
-	padding: $xlarge-gap $large-gap;
+	padding: $xlarge-gap $xxxlarge-gap;
 	margin: 0 $med-gap $xxlarge-gap $med-gap;
-	.post-title {
-		@include title-styles( 0 $med-gap $small-gap 0 );
-		a {
-			font-weight: 300;
-			color: $lblack;
-			@include font-stack-header;
-			&:hover, &:focus {
+	.meta-box {
+		.post-title {
+			@include title-styles( 0 $med-gap $small-gap 0 );
+			a {
+				font-weight: 300;
+				color: $lblack;
 				text-shadow: 0 1px 2px $gray;
-				transition: 0.1s linear text-shadow;
+				@include font-stack-header;
 			}
-		}
-	}  /* .post-title */
-	.post-meta {
-		font-size: $font-med;
-		padding: 0 0 $small-gap 0;
-		letter-spacing: 1px;
-		word-spacing: 1px;
-		border-bottom: 1px solid $lblack;
-		@include font-stack-body;
-		.post-category {
-			padding: 0 0 $tiny-gap 0;
-			color: $blue;
-			&:hover, &:focus {
-				color: $lblack;
-				transition: 0.1s linear color;
+		}  /* .post-title */
+		.post-meta {
+			font-size: $font-med;
+			padding: 0 0 $small-gap 0;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			border-bottom: 1px solid $lblack;
+			@include font-stack-body;
+			.post-category {
+				padding: 0 0 $tiny-gap 0;
+				color: $blue;
+				&:hover, &:focus {
+					color: $lblack;
+					transition: 0.1s linear color;
+				}
 			}
-		}
-		.post-author {
-			padding: 0 0 $tiny-gap 0;
-			color: $blue;
-			&:hover, &:focus {
-				color: $lblack;
-				transition: 0.1s linear color;
+			.post-author {
+				padding: 0 0 $tiny-gap 0;
+				color: $blue;
+				&:hover, &:focus {
+					color: $lblack;
+					transition: 0.1s linear color;
+				}
 			}
-		}
-	}  /* .post-meta */
+		}  /* .post-meta */
+	}  /* .meta-box */
 	.post-styles {
 		h4 {
 			padding: $large-gap 0;
@@ -81,6 +80,17 @@
 				@include font-stack-header;
 			}  /* <li></li> */
 		}  /* <ul></ul> */
+		li {
+			list-style-image: url(../images/icons/png/lightning.png);
+			line-height: 1.5rem;
+			list-style-position: inside;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			padding: 2px 0 4px 0;
+			font-size: $font-med;
+			color: $lblack;
+			@include font-stack-header;
+		}  /* <li></li> */
 		img {
 			margin: $med-gap 0;
 			width: 100%;
