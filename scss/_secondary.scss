@@ -16,7 +16,7 @@
 		a {
 			line-height: 1;
 			font-weight: 300;
-			color: $blue;
+			color: $dblue;
 			font-size: 1.5rem;
 			&:hover, &:focus {
 				color: $blue;
@@ -67,7 +67,7 @@
 				&:last-child {
 					box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
 							  	  -1px 0 0 0 rgba(0, 0, 0, 0.2),
-							   	    0 1px 0 0 rgba(0, 0, 0, 0.3),
+							   	    0 1px 0 0 rgba(0, 0, 0, 0.4),
 							   	    0 -1px 0 0 rgba(0, 0, 0, 0.2);
 				}  /* &:last-child */
 				box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
