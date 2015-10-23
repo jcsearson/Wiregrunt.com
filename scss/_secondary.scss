@@ -1,7 +1,7 @@
 .secondary {
-	display: block;
 	margin: $med-gap $med-gap $xxlarge-gap 0;
 	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+	display: block;
 	@include sidebar-styles( $blue, $lblack );
 	&:last-child {
 		margin: 0 $med-gap $xxlarge-gap 0;
@@ -31,10 +31,10 @@
 		.article-title {
 			@include title-styles( 0 $med-gap $small-gap $med-gap );
 			a {
-				padding-left: $small-gap;
 				letter-spacing: 1px;
 				line-height: 1;
 				width: 90%;
+				padding-left: $small-gap;
 				color: $dwhite;
 				font-size: $font-med;
 				/* position: relative; */
@@ -78,30 +78,37 @@
 				cursor: pointer;
 			}  /* &:hover, &:focus */
 			.related-link {
-				@include font-stack-brand;
 				font-size: $font-med;
+				@include font-stack-brand;
 			}  /* .related-link */
 		}  /* .article-title */
 	}  /* .related-articles */
+}  /* .secondary */
+
+.subscriber-input {
+	margin: $med-gap $med-gap $large-gap 0;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+	display: block;
+	@include sidebar-styles( $lgreen, $lblack );
 	.subscription-block {
 		display: table;
 		padding: $large-gap 0;
 		margin: 0 auto;
 		p {
-			padding: 0 $small-gap 0 0;
+			padding: $med-gap $small-gap 0 0;
 			color: $lgreen;
 			font-size: $font-med;
-			line-height: 1;
 			text-transform: uppercase;
 			display: inline-block;
 			@include font-stack-header;
 		}  /* <p></p> */
 		.email-input {
-			height: $xlarge-gap;
+			font-weight: 700;
+			height: $large-gap;
 			color: $lblack;
 			font-size: $font-small;
-			font-weight: 700;
 			padding: 0 0 0 $small-gap;
+			margin-bottom: $small-gap;
 			background: $dwhite;
 			max-width: $super-gap*3;
 			text-transform: uppercase;
@@ -115,4 +122,4 @@
 			transition: opacity 0.2s linear;
 		}  /* input:focus::-webkit-input-placeholder */
 	}  /* .subscription-block */
-}  /* .secondary */
+}
