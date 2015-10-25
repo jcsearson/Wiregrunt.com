@@ -117,10 +117,10 @@ footer {
 .colophan {
 	.copyright {
 		padding: $large-gap $none;
-		color: $gray;
 		text-align: center;
 		p {
 			font-size: $font-med;
+			color: $gray;
 			@include font-stack-header;
 		}  /* <p></p> */
 	}  /* copyright */
