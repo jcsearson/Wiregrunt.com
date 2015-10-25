@@ -1,5 +1,7 @@
 # WireGrunt.com
 
+![WireGrunt Banner](http://i.imgur.com/iL1jzYY.png)
+
 ## Contributor(s): James C. Searson
 
 ### Tags:
@@ -10,12 +12,11 @@ Technology, Wordpress, Electronics, Black, Green, Blue, Clean, Susy, Scss, Jade,
 
 ### Description:
 
-This was a design version of the project for the website @ <a href="http://wiregrunt.com" >wiregrunt.com</a>.  The idea behind this design was to (REPLACE THIS WITH PROJECT DESCRIPTION).
+This was a design version of the project for the website @ <a href="http://wiregrunt.com" >wiregrunt.com</a>.  The idea behind this design was to create a single ultimate place to catch up on news, get help on a given web dev topic, or just relax and take a break from coding to read articles on various subject matter.
 
 ### Quick Specs
 
 	1. The main content max-width is 70em.
-	2. Media such as videos are set to have a max-width of (N/A) and should be within (N/A) tags (for alignment purposes).
 	3. Blog post images are (N/A)% wide.
 	4. The predominant font used throughout is Source Sans Pro, however others used include Private Sans Web.
 
