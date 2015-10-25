@@ -17,7 +17,7 @@ html(lang="en")
 				header(role='banner')
 					a(href='http://searsino.com/' class="logo-caps") W<span>ire</span>G<span>runt</span>
 
-				nav.menu
+				nav(class="menu" role="navigation")
 					ul.nav-list
 						li.nav-item-box
 							a(href='#' tabindex="3") Articles
@@ -27,6 +27,8 @@ html(lang="en")
 							a(href='#'  tabindex="5") Wordpress
 						li.nav-item-box
 							a(href='#'  tabindex="6") Resources
+						li.nav-item-box
+							a(href='#'  tabindex="6") Log In
 
 
 
@@ -34,13 +36,7 @@ html(lang="en")
 			//------------------------------------------------------------------
 			//--------------------------BLOG POST---------------------------
 			//------------------------------------------------------------------
-			section(class='primary' role='region')
-				article.repost-article
-					a(href="https://howdns.works/" target="_blank")
-						h2.repost-title
-							| How About A Free Refresher Course on DNS Lookups?
-						p.repost-excerpt
-							img(src="images/content/how-dns-works.png", alt="How DNS Works Comic Boook by DNSimple")
+			section(class='primary' role='main')
 				article.blog-post-summary
 					div.meta-box
 						h2.post-title
@@ -62,16 +58,12 @@ html(lang="en")
 							include images/icons/svg/blog-media/svg-tag.svg
 							span.tag-link Linux
 					div.media-share-post
-						span.bar-border.bar-border-left
 						a(class="media-share-post-link facebook-share-post" href="#")
 							include images/icons/svg/blog-media/facebook-circle.svg
-						span.bar-border
 						a(class="media-share-post-link twitter-share-post" href="#")
 							include images/icons/svg/blog-media/twitter-circle.svg
-						span.bar-border
 						a(class="media-share-post-link google-share-post" href="#")
 							include images/icons/svg/blog-media/google-circle.svg
-						span.bar-border.bar-border-right
 					div.user-comment-box
 						form(class="reply authenticated")
 							div(class="postbox")
@@ -80,51 +72,68 @@ html(lang="en")
 
 
 			//------------------------------------------------------------------
-			//--------------------------SUBSCRIBE---------------------------
-			//------------------------------------------------------------------
-			section(class='subscriber-input' role='region')
-				h1 "Your Top Source for All Things Web Development"
-				form.article-links.subscription-block
-					input(class="email-input" value type="email" placeholder="email" tabindex="1" required aria-required="true")
-					<button type="submit" tabindex="2" class="subscriber-submission">Get Informed</button>
-
-
-			//------------------------------------------------------------------
 			//--------------------------SIDE-CONTENT----------------------
 			//------------------------------------------------------------------
 			section(class='secondary' role='region')
 				h2 Top Articles
 				article.related-articles
-					p.article-title
+					h3.article-title
 						<a href='#' target='_blank' class="related-link"  tabindex="7">Making WP-Admin Safe for Clients</a>
 						span(class="article-sub-title") Developer Code Snippets
-					p.article-title
+					h3.article-title
 						<a href='#' target='_blank' class="related-link"  tabindex="8">Web Developer Self-sufficiency</a>
 						span(class="article-sub-title") A Tentative Guide
-					p.article-title
+					h3.article-title
 						<a href='#' target='_blank' class="related-link"  tabindex="9">Apache Localhost Tutorial</a>
 						span(class="article-sub-title") Configuration Solution
-					p.article-title
+					h3.article-title
 						<a href='#' target='_blank' class="related-link"  tabindex="10">Write Objects to a Text File</a>
 						span(class="article-sub-title") iOS Development
-					p.article-title
+					h3.article-title
 						<a href='#' target='_blank' class="related-link"  tabindex="11">NSString for Reading an ASCII File</a>
 						span(class="article-sub-title") iOS Toolbox
 
-			section(class='secondary' role='region')
+			section(class="secondary" role="region")
+				h2	Forum
+				article.forum-cat-links
+					h3.forum-category-title
+						<a href='#' target='_blank' class="forum-category-link"  tabindex="12">HTML & CSS</a>
+					h3.forum-category-title
+						<a href='#' target='_blank' class="forum-category-link"  tabindex="13">JavaScript & JQuery</a>
+					h3.forum-category-title
+						<a href='#' target='_blank' class="forum-category-link"  tabindex="14">PHP</a>
+					h3.forum-category-title
+						<a href='#' target='_blank' class="forum-category-link"  tabindex="15">SQL</a>
+					h3.forum-category-title
+						<a href='#' target='_blank' class="forum-category-link"  tabindex="15">Browsers</a>
+
+
+			section(class='secondary' role='complimentary')
 				h2 Around the Web
 				article.related-articles
-					p.web-article.article-title
-						<a href='http://www.bloomberg.com/bw/stories/2001-12-05/lamos-adventures-in-worldcom' target='_blank' class="related-link web-attribution"  tabindex="12">Adrian Lamo's Adventures at WorldCom</a>
-					p.web-article.article-title
-						<a href='http://www.wired.com/2015/10/see-jrr-tolkien-lord-of-the-rings-middle-earth-illustrations-for-first-time/' target='_blank' class="related-link web-attribution"  tabindex="13">The Sketches that Inspired...</a>
-					p.web-article.article-title
-						<a href='http://www.paulund.co.uk/creating-different-css3-box-shadows-effects' target='_blank' class="related-link web-attribution"  tabindex="14">A Closer Look at CSS Box Shadows...</a>
-					p.web-article.article-title
-						<a href='http://www.toptal.com/php/10-most-common-mistakes-php-programmers-make/' target='_blank' class="related-link web-attribution"  tabindex="15">10 Common (PHP) Mistakes that...</a>
-					p.web-article.article-title
-						<a href='http://www.sbnation.com/nfl/2015/8/7/9114747/joe-flacco-elite-gop-debate-cleveland/' target='_blank' class="related-link web-attribution"  tabindex="16">What a Guy with a Joe Flacco Sign...</a>
+					h4.web-article.article-title
+						<a href='http://www.bloomberg.com/bw/stories/2001-12-05/lamos-adventures-in-worldcom' target='_blank' class="related-link web-attribution"  tabindex="16">Adrian Lamo's Adventures at WorldCom</a>
+					h4.web-article.article-title
+						<a href='http://www.wired.com/2015/10/see-jrr-tolkien-lord-of-the-rings-middle-earth-illustrations-for-first-time/' target='_blank' class="related-link web-attribution"  tabindex="17">The Sketches that Inspired...</a>
+					h4.web-article.article-title
+						<a href='http://www.paulund.co.uk/creating-different-css3-box-shadows-effects' target='_blank' class="related-link web-attribution"  tabindex="18">A Closer Look at CSS Box Shadows...</a>
+					h4.web-article.article-title
+						<a href='http://www.toptal.com/php/10-most-common-mistakes-php-programmers-make/' target='_blank' class="related-link web-attribution"  tabindex="19">10 Common (PHP) Mistakes that...</a>
+					h4.web-article.article-title
+						<a href='http://www.sbnation.com/nfl/2015/8/7/9114747/joe-flacco-elite-gop-debate-cleveland/' target='_blank' class="related-link web-attribution"  tabindex="20">What a Guy with a Joe Flacco Sign...</a>
 
+			section(class="secondary" role="region")
+
+			//------------------------------------------------------------------
+			//--------------------------BOTTOM BANNER-------------------
+			//------------------------------------------------------------------
+			section(class="tertiary" role="region")
+				article.repost-article
+						a(href="https://howdns.works/" target="_blank")
+							h2.repost-title
+								| How About A Free Refresher Course on DNS Lookups?
+							p.repost-excerpt
+								img(src="images/content/how-dns-works.png", alt="How DNS Works Comic Boook by DNSimple")
 
 
 
@@ -176,7 +185,7 @@ html(lang="en")
 
 
 
-		div.colophan
+		div(class="colophan" role="contentinfo")
 			div.copyright
 				p &copy; 2015,  Searsino | All Rights Reserved.
 
