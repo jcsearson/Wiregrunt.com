@@ -6,7 +6,7 @@ $susy: (
 	math: fluid,
 	output: float,
 	gutter-position: split,
-	container: 70em,
+	container: 76em,
 	box-sizing: border-box,
 );
 //====================================
@@ -73,10 +73,14 @@ nav {
 	@include span(8 of 12 first);
 }  /* .primary */
 
-.secondary,
-.subscriber-input {
+.secondary {
 	@include span(4 of 12 last);
 }  /* .secondary, .subscriber-input */
+
+.tertiary {
+	margin-top: $large-gap;
+	@include container;
+}
 
 footer {
 	width: 100%;
