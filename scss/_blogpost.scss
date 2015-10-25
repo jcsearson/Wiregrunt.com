@@ -8,7 +8,7 @@
 			a {
 				font-weight: 300;
 				text-shadow: 0 1px 2px $gray;
-				color: $lblack;
+				color: $blue;
 				@include font-stack-header;
 			}  /* <a></a> */
 		}  /* .post-title */
@@ -17,7 +17,7 @@
 			word-spacing: 1px;
 			font-size: $font-med;
 			padding: 0 0 $small-gap 0;
-			border-bottom: 1px solid $lblack;
+			border-bottom: 1px solid $dgray;
 			@include font-stack-body;
 			.post-category {
 				padding: 0 0 $tiny-gap 0;
@@ -84,7 +84,6 @@
 			letter-spacing: 1px;
 			word-spacing: 1px;
 			padding: 2px 0 4px 0;
-			list-style-image: url(../images/icons/png/lightning.png);
 			font-size: $font-med;
 			color: $lblack;
 			list-style-position: inside;
@@ -133,18 +132,6 @@
 				fill: $lblack;
 			}  /* .svg-share-post */
 		}  /* .media-share-post-link */
-		.bar-border {
-			bottom: $small-gap;
-			width: $xxlarge-gap;
-			border-bottom: 1px solid $lblack;
-			position: relative;
-		}  /* .bar-border */
-		.bar-border-left {
-			width: $xxxlarge-gap*3;
-		}  /* .bar-border-left */
-		.bar-border-right {
-			width: $xxxlarge-gap*3;
-		}  /* .bar-border-right */
 		.blog-svg-facebook {
 			&:hover, &:focus {
 				fill: $facebook;
