@@ -18,8 +18,8 @@
 			line-height: $lineh-med;
 			font-size: $font-larger;
 			&:hover, &:focus {
-				color: $blue;
-				transition: 0.2s linear color;
+				color: $green;
+				transition: 0.1s linear color;
 			}  /* a:hover, a:focus */
 		}  /* <a></a> */
 	}  /* .section-title */
@@ -64,7 +64,7 @@
 
 .article-title {
 	padding: $small-gap $med-gap;
-	margin: 0 $med-gap;
+	/* margin: 0 $med-gap; */
 	background: none;
 	box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1),
 				   0 1px 0 0 transparent,
@@ -98,8 +98,25 @@
 	}  /* .article-sub-title */
 }  /* .article-title */
 
+.sidebar-learner-head {
+	background: $dblack!important;
+	color: $green!important;
+	box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
+					   -1px 0 0 0 rgba(0, 0, 0, 0.2),
+					   0 1px 1px 0 rgba(0, 0, 0, 0.2),
+					   0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+	text-align: center!important;
+}
+
+.sidebar-head-banner {
+	background: $dblack!important;
+	box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
+					   -1px 0 0 0 rgba(0, 0, 0, 0.2),
+					   0 1px 1px 0 rgba(0, 0, 0, 0.2),
+					   0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+}
 .forum-cat-links {
-	background: $dwhite;
+	background: $palewhite;
 	.forum-category-title {
 		.forum-category-link {
 			color: $green;
