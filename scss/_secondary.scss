@@ -106,6 +106,13 @@
 					   0 1px 1px 0 rgba(0, 0, 0, 0.2),
 					   0 -1px 1px 0 rgba(0, 0, 0, 0.2);
 	text-align: center!important;
+	.resources-banner {
+		color: $green;
+		&:hover, &:focus {
+			color: $blue;
+			transition: 0.2s linear all;
+		}
+	}
 }
 
 .sidebar-head-banner {
