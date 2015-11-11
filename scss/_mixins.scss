@@ -29,18 +29,13 @@
       }
 }
 
-@mixin font-stack-brand {
-      font-family: 'PT Sans', sans-serif;
-      @include FOUTprevent;
-}  /* brand */
-
 @mixin font-stack-header {
-  	font-family: "source-sans-pro",sans-serif;
+  	font-family: 'Montserrat', sans-serif;
       @include FOUTprevent;
 }  /* header */
 
 @mixin font-stack-body {
-      font-family: "private-sans-web",sans-serif;
+      font-family: "Ubuntu",sans-serif;
       @include FOUTprevent;
 }  /* body */
 

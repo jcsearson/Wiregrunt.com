@@ -35,7 +35,7 @@
 				width: 90%;
 				padding-left: $small-gap;
 				color: $dwhite;
-				font-size: $font-med;
+				font-size: $font-large;
 			}  /* <a></a> */
 		}  /* .article-title */
 	}  /* .side-content */
@@ -44,7 +44,7 @@
 	}  /* .article-links */
 	h2 {
 		color: $blue;
-		font-size: $font-large;
+		font-size: $font-larger;
 		background: $dwhite;
 		padding: $small-gap $med-gap;
 		text-transform: uppercase;
@@ -87,14 +87,14 @@
 	}  /* .article-title:hover, .article-title:focus */
 	.related-link {
 		color: $lblack;
-		font-size: $font-med;
+		font-size: $font-large;
 		display: block;
-		@include font-stack-brand;
+		@include font-stack-header;
 	}  /* .related-link */
 	.article-sub-title {
 		color: $gray;
-		font-size: $font-small;
-		@include font-stack-brand;
+		font-size: $font-med;
+		@include font-stack-header;
 	}  /* .article-sub-title */
 }  /* .article-title */
 
@@ -131,7 +131,7 @@
 			letter-spacing: 1px;
 			text-shadow: 1px 1px 1px $lblack;
 			text-transform: uppercase;
-			@include font-stack-brand;
+			@include font-stack-header;
 		}  /* forum-category-link */
 		&:hover, &:focus {
 			background: $dgray;

@@ -16,7 +16,7 @@ header {
 		text-shadow: 0 1px 1px $dblack;
 		position: relative;
 		text-transform: uppercase;
-		@include font-stack-brand;
+		@include font-stack-header;
 		span {
 			top: 1px;
 			letter-spacing: 2px;
@@ -41,7 +41,7 @@ header {
 			padding: $small-gap 0 $small-gap 0;
 			font-size: $font-small;
 			text-transform: uppercase;
-			@include font-stack-brand;
+			@include font-stack-header;
 			&:hover, &:focus {
 				border-bottom: 1px solid $lgreen;
 				transition: 0.1s linear all;
