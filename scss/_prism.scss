@@ -15,7 +15,7 @@ pre[class*="language-"] {
 	word-spacing: normal;
 	word-break: normal;
 	line-height: 1.2;
-	display: inline-block;
+	/* display: inline-block; */
 	background: #222222;
 	font-size: 20px;
 	font-weight: 300;
@@ -72,6 +72,10 @@ pre[class*="language-"] {
 	color: #CA7740;
 }
 
+.token {
+	font-size: $font-med!important;
+}
+
 .token.comment,
 .token.prolog,
 .token.doctype,
@@ -105,10 +109,6 @@ pre[class*="language-"] {
 
 .token.string {
 	color: #F8F8F8;
-}
-
-.token.operator {
-	color:  #6EBB5C;
 }
 
 .token.entity,
@@ -157,18 +157,7 @@ pre[class*='language-'] > code[data-language] {
 	display: block;
 	color: #CA7740;
 }
-pre[class*='language-'] > code[data-language]::before {
-	content: attr(data-language);
-	font-family: "proxima-nova", sans-serif;
-	color: #222222;
-	background-color: #7587A6;
-	display: block;
-	width: 100%;
-	font-size: 28px;
-	font-weight: 700;
-	padding: 0 0.5em;
-	text-shadow: none;
-}
+
 @media (max-width: 600px) {
 	pre[class*='language-'] > code[data-language]::before {
 		font-size: 10px!important;
