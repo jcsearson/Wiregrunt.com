@@ -55,8 +55,6 @@
 		}  /* <p></p> */
 		code {
 			padding: $tiny-gap $small-gap 0 $small-gap;
-			text-shadow: 1px 1px 1px $white;
-			background: $lgray;
 			font-family: Consolas, Monaco, 'Andale Mono', monospace;
 		}  /* <code></code> */
 		strong {
@@ -96,6 +94,10 @@
 			box-shadow: 0 0 1px 1px $lgray;
 			height: auto;
 		}  /* <img> */
+		blockquote {
+			background: $gray;
+			padding: $small-gap;
+		}
 	}  /* .post-styles */
 	.blog-post-tags {
 		width: 100%;
