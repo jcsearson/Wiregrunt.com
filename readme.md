@@ -1,4 +1,4 @@
-![WireGrunt Banner](http://i.imgur.com/iL1jzYY.png)
+WireGrunt.com
 
 ### Description:
 
