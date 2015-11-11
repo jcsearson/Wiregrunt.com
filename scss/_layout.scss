@@ -79,7 +79,7 @@ nav {
 
 .tertiary {
 	margin-top: $large-gap;
-	@include container;
+	@include span(12);
 }
 
 footer {
