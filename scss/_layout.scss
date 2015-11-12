@@ -82,6 +82,13 @@ nav {
 	@include span(12);
 }
 
+.resources {
+	@include container;
+	.resource-block {
+		@include span(2);
+	}
+}
+
 footer {
 	width: 100%;
 	bottom: 0;

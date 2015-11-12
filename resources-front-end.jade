@@ -1,0 +1,126 @@
+doctype default
+html(lang="en")
+
+	head
+		//- Typekit Font Request
+		include jades/typekits.jade
+		title WireGrunt.com
+		//- Metas
+		include jades/metas.jade
+		//- favicons
+		include jades/stylesheets.jade
+		//- <meta name='google-site-verification' content='4uYZbqUA80FY2H8m4TS7_Rfb7x_LpmXd6vpsddVGUHM' />
+
+	body
+		section.heading
+			div.head-container
+				header(role='banner')
+					a(href='/' class="logo-caps") W<span>ire</span>G<span>runt</span>
+
+				nav(class="menu" role="navigation")
+					ul.nav-list
+						li.nav-item-box
+							a(href='#' tabindex="3") Articles
+						li.nav-item-box
+							a(href='#' tabindex="4") Security
+						li.nav-item-box
+							a(href='#'  tabindex="5") Wordpress
+						li.nav-item-box
+							a(href='/resources.html'  tabindex="6") Resources
+
+		div.main-content
+			section(class='resources-container' role='main')
+				article(class="resource-block")
+					h2(class="front-end-title ") Front End Development
+					div(class="front-end-blogs")
+						a(href="https://css-tricks.com/" class="resource-link") CSS-tricks
+						p(class="resource-description") CSS-Tricks launched July 4th, 2007. It used to be, believe it or not, primarily about CSS! Over the years, despite the hokey name, CSS-Tricks has come to become a site about all things web design and development.
+					div(class="front-end-tools")
+						a(href="http://codepen.io/" class="resource-link") Codepen.io
+						p(class="resource-description") CodePen is a playground for the front end side of the web. It's all about inspiration, education, and sharing.
+					div(class="front-end-tools")
+						a(href="http://prismjs.com/" class="resource-link") Prism.js
+						p(class="resource-description") Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. It’s a spin-off from Dabblet and is tested there daily by thousands.
+					div(class="front-end-tools")
+						a(href="http://placekitten.com/" class="resource-link") Placekitten
+						p(class="resource-description") A quick and simple service for getting pictures of kittens for use as placeholders in your designs or code. Just put your image size (width & height) after our URL and you'll get a placeholder.
+
+					div(class="front-end-blogs")
+						a(href="https://davidwalsh.name/" class="resource-link") David Walsh
+						p(class="resource-description") David Walsh is a web developer and software engineer from Madison, Wisconsin.  His expertise and interest lay in front-end technologies.
+					div(class="front-end-blogs")
+						a(href="http://www.paulirish.com/about/" class="resource-link") Paul Irish
+						p(class="resource-description") Paul Irish works on the Google Chrome team focused on Developer Tooling, Chrome DevTools and everything else Chrome can do to make you a productive web developer.
+					div(class="front-end-blogs")
+						a(href="http://www.paulirish.com/about/" class="resource-link") Paul Irish
+						p(class="resource-description") Paul Irish works on the Google Chrome team focused on Developer Tooling, Chrome DevTools and everything else Chrome can do to make you a productive web developer.
+					div(class="front-end-blogs")
+						a(href="http://www.paulirish.com/about/" class="resource-link") Paul Irish
+						p(class="resource-description") Paul Irish works on the Google Chrome team focused on Developer Tooling, Chrome DevTools and everything else Chrome can do to make you a productive web developer.
+
+					div(class="front-end-radio")
+						a(href="http://shoptalkshow.com/" class="resource-link") Shop Talk Show
+						p(class="resource-description") An internet radio show about the internet starring Dave Rupert and Chris Coyier.
+					div(class="front-end-radio")
+						a(href="http://ttlpodcast.com/" class="resource-link") The TTL Podcast
+						p(class="resource-description") The acronym "TTL" stands for "time-to-live," or the time until a system should consider a resource "stale" and attempt to fetch a fresh version of the resource.
+					div(class="front-end-radio")
+						a(href="http://www.muleradio.net/mistakes/" class="resource-link") Let's Make Mistakes
+						p(class="resource-description") Mike and Jessie talk about design, with a lot of tangents along the way.
+					div(class="front-end-radio")
+						a(href="http://backtofrontshow.com/" class="resource-link") Back to Front Show
+						p(class="resource-description") The Back to Front Show is a weekly podcast hosted by Keir Whitaker and Kieran Masterton, both veterans of the web development industry.
+
+		footer(role='contentinfo')
+			div.foot-wrap
+				div.recent-articles-footer
+					h5.foot-widget-head Recent Articles
+					h5.foot-widget-link
+						a(href="#") An htaccess Template
+					h5.foot-widget-link
+						a(href="#") "Fizzbuzz"
+					h5.foot-widget-link
+						a(href="#") Apache Localhost (Tutorial)
+					h5.foot-widget-link
+						a(href="#") Web Developer Self-sufficiency
+					h5.foot-widget-link
+						a(href="#") NSString to Read ASCII File
+				div.footer-nav
+					h5.foot-widget-head Quick Links
+					h5.foot-widget-link
+						a(href="#") Articles
+					h5.foot-widget-link
+						a(href="#") Forum
+					h5.foot-widget-link
+						a(href="#") Wordpress
+					h5.foot-widget-link
+						a(href="#") Resources
+					h5.foot-widget-link
+						a(href="#") Colophan
+				div.author
+					p.author-note
+						| It all started with an idea... then a custom design...  From paper to a screen, a website came to life...  This life is curtosy of <a href='#'>Searsino</a>.
+					ul.connect-list
+						li.social-connection
+							a(href='https://www.facebook.com/jcsearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/facebook.svg
+
+						li.social-connection
+							a(href='https://twitter.com/GreatSearsino' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/twitter.svg
+
+						li.social-connection
+							a(href='https://www.linkedin.com/in/jamessearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/linkedin.svg
+
+						li.social-connection
+							a(href='https://github.com/jcsearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/github.svg
+
+
+
+		div(class="colophan" role="contentinfo")
+			div.copyright
+				p &copy; 2015,  Searsino | All Rights Reserved.
+
+include jades/scripts.jade
