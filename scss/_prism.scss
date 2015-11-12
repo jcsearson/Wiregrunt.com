@@ -17,8 +17,8 @@ pre[class*="language-"] {
 	line-height: 1.2;
 	/* display: inline-block; */
 	background: #222222;
-	font-size: 20px;
-	font-weight: 300;
+	font-weight: 400;
+	font-size: $font-med!important;
 
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
@@ -70,10 +70,6 @@ pre[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
 	color: #CA7740;
-}
-
-.token {
-	font-size: $font-med!important;
 }
 
 .token.comment,
