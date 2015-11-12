@@ -89,6 +89,7 @@
 		color: $lblack;
 		font-size: $font-large;
 		display: block;
+		padding-bottom: $small-gap;
 		@include font-stack-header;
 	}  /* .related-link */
 	.article-sub-title {
