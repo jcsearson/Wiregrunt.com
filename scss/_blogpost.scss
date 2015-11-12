@@ -46,12 +46,13 @@
 			text-shadow: 0 1px 1px $lblack;
 		}  /* <h4></h4> */
 		p {
-			font-size: 1rem;
+			font-size: 1.25rem;
+			font-weight: 300;
 			letter-spacing: 1px;
 			word-spacing: 2px;
 			margin: $large-gap 0 $xxxlarge-gap 0;
 			line-height: $lineh-large;
-			@include font-stack-header;
+			@include font-stack-body;
 		}  /* <p></p> */
 		code {
 			padding: $tiny-gap $small-gap 0 $small-gap;
@@ -73,17 +74,24 @@
 				letter-spacing: 1px;
 				word-spacing: 1px;
 				padding: 4px 0;
-				font-size: $font-med;
+				/* font-size: $font-med; */
 				color: $lblack;
-				@include font-stack-header;
+				a:hover, a:focus {
+					color: $lblack;
+					transition: 0.2s linear color;
+				}
 			}  /* <li></li> */
 		}  /* <ul></ul> */
+		a:hover, a:focus {
+			color: $green;
+			transition: 0.2s linear color;
+		}
 		li {
 			line-height: 1.5rem;
 			letter-spacing: 1px;
 			word-spacing: 1px;
 			padding: 2px 0 4px 0;
-			font-size: $font-med;
+			/* font-size: $font-med; */
 			color: $lblack;
 			list-style-position: inside;
 			@include font-stack-header;
@@ -95,8 +103,30 @@
 			height: auto;
 		}  /* <img> */
 		blockquote {
-			background: $gray;
 			padding: $small-gap;
+			color: $black;
+			font-size: 1.25rem;
+			background: #E8E8E8 url('../images/icons/svg/blog-media/blockquote-icon.svg') right bottom no-repeat;
+			strong {
+				color: $green;
+				font-weight: 700;
+				font-size: 1.5rem;
+				text-shadow: 1px 1px 1px $black;
+				letter-spacing: 1px;
+				&:first-child {
+					padding-right: $small-gap;
+				}
+			}
+			a {
+				color: $blue;
+				&:hover, &:focuss {
+					color: $dblue;
+					transition: 0.2s linear color;
+				}
+			}
+			span {
+				padding: $med-gap 0;
+			}
 		}
 	}  /* .post-styles */
 	.blog-post-tags {
