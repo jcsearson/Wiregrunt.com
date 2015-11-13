@@ -1,32 +1,5 @@
-doctype default
-html(lang="en")
-
-	head
-		//- Typekit Font Request
-		include jades/typekits.jade
-		title WireGrunt.com
-		//- Metas
-		include jades/metas.jade
-		//- favicons
-		include jades/stylesheets.jade
-		//- <meta name='google-site-verification' content='4uYZbqUA80FY2H8m4TS7_Rfb7x_LpmXd6vpsddVGUHM' />
-
-	body
-		section.heading
-			div.head-container
-				header(role='banner')
-					a(href='/' class="logo-caps") W<span>ire</span>G<span>runt</span>
-
-				nav(class="menu" role="navigation")
-					ul.nav-list
-						li.nav-item-box
-							a(href='#' tabindex="3") Articles
-						li.nav-item-box
-							a(href='#' tabindex="4") Security
-						li.nav-item-box
-							a(href='#'  tabindex="5") Wordpress
-						li.nav-item-box
-							a(href='/resources.html'  tabindex="6") Resources
+include parts/doctype.jade
+		include parts/header.jade
 
 		div.main-content
 			section(class='resources-container' role='main')
@@ -44,57 +17,5 @@ html(lang="en")
 					h2(class="tech-title") General Technology
 
 
-
-		footer(role='contentinfo')
-			div.foot-wrap
-				div.recent-articles-footer
-					h5.foot-widget-head Recent Articles
-					h5.foot-widget-link
-						a(href="#") An htaccess Template
-					h5.foot-widget-link
-						a(href="#") "Fizzbuzz"
-					h5.foot-widget-link
-						a(href="#") Apache Localhost (Tutorial)
-					h5.foot-widget-link
-						a(href="#") Web Developer Self-sufficiency
-					h5.foot-widget-link
-						a(href="#") NSString to Read ASCII File
-				div.footer-nav
-					h5.foot-widget-head Quick Links
-					h5.foot-widget-link
-						a(href="#") Articles
-					h5.foot-widget-link
-						a(href="#") Forum
-					h5.foot-widget-link
-						a(href="#") Wordpress
-					h5.foot-widget-link
-						a(href="#") Resources
-					h5.foot-widget-link
-						a(href="#") Colophan
-				div.author
-					p.author-note
-						| It all started with an idea... then a custom design...  From paper to a screen, a website came to life...  This life is curtosy of <a href='#'>Searsino</a>.
-					ul.connect-list
-						li.social-connection
-							a(href='https://www.facebook.com/jcsearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/facebook.svg
-
-						li.social-connection
-							a(href='https://twitter.com/GreatSearsino' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/twitter.svg
-
-						li.social-connection
-							a(href='https://www.linkedin.com/in/jamessearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/linkedin.svg
-
-						li.social-connection
-							a(href='https://github.com/jcsearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/github.svg
-
-
-
-		div(class="colophan" role="contentinfo")
-			div.copyright
-				p &copy; 2015,  Searsino | All Rights Reserved.
-
+include parts/footer.jade
 include jades/scripts.jade

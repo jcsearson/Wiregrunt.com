@@ -1,37 +1,7 @@
-doctype default
-html(lang="en")
-
-	head
-		//- Typekit Font Request
-		include jades/typekits.jade
-		title WireGrunt.com
-		//- Metas
-		include jades/metas.jade
-		//- favicons
-		include jades/stylesheets.jade
-		//- <meta name='google-site-verification' content='4uYZbqUA80FY2H8m4TS7_Rfb7x_LpmXd6vpsddVGUHM' />
-
-	body
-		section.heading
-			div.head-container
-				header(role='banner')
-					a(href='/' class="logo-caps") W<span>ire</span>G<span>runt</span>
-
-				nav(class="menu" role="navigation")
-					ul.nav-list
-						li.nav-item-box
-							a(href='#' tabindex="3") Articles
-						li.nav-item-box
-							a(href='#' tabindex="4") Security
-						li.nav-item-box
-							a(href='#'  tabindex="5") Wordpress
-						li.nav-item-box
-							a(href='/resources.html'  tabindex="6") Resources
+include parts/doctype.jade
+		include parts/header.jade
 
 		div.main-content
-			//------------------------------------------------------------------
-			//--------------------------BLOG POST---------------------------
-			//------------------------------------------------------------------
 			section(class='primary' role='main')
 				article.blog-post-summary
 					div.meta-box
@@ -54,112 +24,7 @@ html(lang="en")
 							include images/icons/svg/blog-media/svg-tag.svg
 							span.tag-link Hacker
 
-
-			//------------------------------------------------------------------
-			//--------------------------SIDE-CONTENT----------------------
-			//------------------------------------------------------------------
-			section(class="secondary" role="region")
-				h2.sidebar-learner-head
-					<a href='#' target='_blank' class="resources-banner"  tabindex="12">Are You Self-taught?</a>
-
-			section(class="secondary" role="region")
-				h2.sidebar-head-banner Forum
-				article.forum-cat-links
-					h3.forum-category-title.article-title
-						<a href='#' target='_blank' class="forum-category-link related-link"  tabindex="12">HTML & CSS</a>
-					h3.forum-category-title.article-title
-						<a href='#' target='_blank' class="forum-category-link related-link"  tabindex="13">JavaScript & JQuery</a>
-					h3.forum-category-title.article-title
-						<a href='#' target='_blank' class="forum-category-link related-link"  tabindex="14">PHP</a>
-					h3.forum-category-title.article-title
-						<a href='#' target='_blank' class="forum-category-link related-link"  tabindex="15">SQL</a>
-					h3.forum-category-title.article-title
-						<a href='#' target='_blank' class="forum-category-link related-link"  tabindex="15">Workstation</a>
-					h3.forum-category-title.article-title
-						<a href='#' target='_blank' class="forum-category-link related-link"  tabindex="15">SEO</a>
-
-			section(class='secondary' role='region')
-				h2.sidebar-head-banner Top Articles
-				article.related-articles
-					h3.article-title
-						<a href='#' target='_blank' class="related-link"  tabindex="7">Making WP-Admin Safe for Clients</a>
-						span(class="article-sub-title") Developer Code Snippets
-					h3.article-title
-						<a href='#' target='_blank' class="related-link"  tabindex="8">Web Developer Self-sufficiency</a>
-						span(class="article-sub-title") A Tentative Guide
-					h3.article-title
-						<a href='#' target='_blank' class="related-link"  tabindex="9">Apache Localhost Tutorial</a>
-						span(class="article-sub-title") Configuration Solution
-					h3.article-title
-						<a href='#' target='_blank' class="related-link"  tabindex="10">Write Objects to a Text File</a>
-						span(class="article-sub-title") iOS Development
-					h3.article-title
-						<a href='#' target='_blank' class="related-link"  tabindex="11">NSString for Reading an ASCII File</a>
-						span(class="article-sub-title") iOS Toolbox
-
-			//------------------------------------------------------------------
-			//--------------------------BOTTOM BANNER-------------------
-			//------------------------------------------------------------------
-			section(class="tertiary" role="region")
-				article.repost-article
-						a(href="https://howdns.works/" target="_blank")
-							h2.repost-title
-								| How About A Free Refresher Course on DNS Lookups?
-							p.repost-excerpt
-								img(src="images/content/how-dns-works.png", alt="How DNS Works Comic Boook by DNSimple")
-
-
-
-		footer(role='contentinfo')
-			div.foot-wrap
-				div.recent-articles-footer
-					h5.foot-widget-head Recent Articles
-					h5.foot-widget-link
-						a(href="#") An htaccess Template
-					h5.foot-widget-link
-						a(href="#") "Fizzbuzz"
-					h5.foot-widget-link
-						a(href="#") Apache Localhost (Tutorial)
-					h5.foot-widget-link
-						a(href="#") Web Developer Self-sufficiency
-					h5.foot-widget-link
-						a(href="#") NSString to Read ASCII File
-				div.footer-nav
-					h5.foot-widget-head Quick Links
-					h5.foot-widget-link
-						a(href="#") Articles
-					h5.foot-widget-link
-						a(href="#") Forum
-					h5.foot-widget-link
-						a(href="#") Wordpress
-					h5.foot-widget-link
-						a(href="#") Resources
-					h5.foot-widget-link
-						a(href="#") Colophan
-				div.author
-					p.author-note
-						| It all started with an idea... then a custom design...  From paper to a screen, a website came to life...  This life is curtosy of <a href='#'>Searsino</a>.
-					ul.connect-list
-						li.social-connection
-							a(href='https://www.facebook.com/jcsearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/facebook.svg
-
-						li.social-connection
-							a(href='https://twitter.com/GreatSearsino' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/twitter.svg
-
-						li.social-connection
-							a(href='https://www.linkedin.com/in/jamessearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/linkedin.svg
-
-						li.social-connection
-							a(href='https://github.com/jcsearson' class='social-media-anchor' target='_blank')
-								include ./images/icons/svg/footer-media/github.svg
-
-
-
-		div(class="colophan" role="contentinfo")
-			div.copyright
-				p &copy; 2015,  Searsino | All Rights Reserved.
-
+			include parts/sidebar.jade
+			include parts/tertiary.jade
+include parts/footer.jade
 include jades/scripts.jade
