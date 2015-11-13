@@ -11,7 +11,7 @@ header {
 	> a {
 		letter-spacing: 1px;
 		color: $lgreen;
-		font-size: 2.25rem;
+		font-size: 3.25rem;
 		padding: 0 0 0 $large-gap;
 		text-shadow: 0 1px 1px $dblack;
 		position: relative;
@@ -20,7 +20,7 @@ header {
 		span {
 			top: 1px;
 			letter-spacing: 2px;
-			font-size: $font-med;
+			font-size: $font-large;
 			color: $dwhite;
 			position: relative;
 		}  /* <span></span> */
