@@ -18,8 +18,8 @@ header {
 		text-transform: uppercase;
 		@include font-stack-header;
 		span {
-			top: 1px;
-			letter-spacing: 2px;
+			top: 4px;
+			letter-spacing: 3px;
 			font-size: $font-large;
 			color: $dwhite;
 			position: relative;
@@ -28,7 +28,7 @@ header {
 }  /* /header */
 
 .menu {
-	padding: 2rem $tiny-gap $large-gap 0;
+	padding: 0 $tiny-gap $large-gap 0;
 }  /* .menu */
 
 .nav-list {
