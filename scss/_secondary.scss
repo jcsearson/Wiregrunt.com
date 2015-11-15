@@ -64,8 +64,9 @@
 
 .article-title {
 	padding: $small-gap $med-gap;
-	/* margin: 0 $med-gap; */
+	font-size: $font-large;
 	background: none;
+	display: block;
 	box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1),
 				   0 1px 0 0 transparent,
 				   1px 0 0 0 transparent,
@@ -73,6 +74,7 @@
 	&:hover, &:focus {
 		background: $white;
 		cursor: pointer;
+		outline: none;
 		box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
 					   -1px 0 0 0 rgba(0, 0, 0, 0.2),
 					   0 1px 1px 0 rgba(0, 0, 0, 0.2),
@@ -94,30 +96,15 @@
 	}  /* .related-link */
 	.article-sub-title {
 		color: $gray;
+		padding-top: $med-gap;
 		font-size: $font-med;
+		display: block;
 		@include font-stack-header;
 	}  /* .article-sub-title */
-}  /* .article-title */
-
-.sidebar-question-head {
-	background: #D5D5D5!important;
-	text-shadow: 1px 1px 1px $lblack;
-	color: $green!important;
-	box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
-					   -1px 0 0 0 rgba(0, 0, 0, 0.2),
-					   0 1px 1px 0 rgba(0, 0, 0, 0.2),
-					   0 -1px 1px 0 rgba(0, 0, 0, 0.2);
-	/* text-align: center!important; */
-	.resources-banner {
-		color: $green;
-		text-transform: none;
-		font-size: $font-larger;
-		&:hover, &:focus {
-			color: $blue;
-			transition: 0.2s linear all;
-		}
+	.web-repost {
+		color: $black!important;
 	}
-}
+}  /* .article-title */
 
 .sidebar-head-banner {
 	background: $dblack!important;
