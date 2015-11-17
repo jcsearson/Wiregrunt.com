@@ -56,18 +56,26 @@
 		}  /* <p></p> */
 		code {
 			padding: $tiny-gap $small-gap 0 $small-gap;
+			background: $lgray;
 			font-family: Consolas, Monaco, 'Andale Mono', monospace;
 		}  /* <code></code> */
 		strong {
-			text-shadow: 1px 1px 1px $gray;
+			text-shadow: 1px 1px 1px $black;
 			font-size: $font-large;
 		}  /* <strong></strong> */
 		em {
 			font-weight: 300;
 			padding: 0 2px 0 0;
-			color: $dgray;
+			color: $gray;
 			font-style: italic;
 		}  /* <em></em> */
+		a {
+			text-shadow: 1px 1px 1px $dgray;
+			color: $green;
+			&:hover, &:focus {
+				color: $blue;
+			}
+		}
 		ul {
 			margin: 0 0 $xxxlarge-gap 0;
 			li {
@@ -76,14 +84,15 @@
 				padding: 4px 0;
 				/* font-size: $font-med; */
 				color: $lblack;
+				font-size: $font-large;
 				a:hover, a:focus {
-					color: $lblack;
+					color: $blue;
 					transition: 0.2s linear color;
 				}
 			}  /* <li></li> */
 		}  /* <ul></ul> */
 		a:hover, a:focus {
-			color: $green;
+			color: $blue;
 			transition: 0.2s linear color;
 		}
 		li {
@@ -117,27 +126,27 @@
 				}
 			}
 			a {
-				color: $blue;
+				color: $green;
 				&:hover, &:focuss {
-					color: $dblue;
+					color: $blue;
 					transition: 0.2s linear color;
 				}
 			}
 			span {
 				font-weight: 700;
 				padding: $med-gap 0;
-			}
-			.person-a {
-				strong {
+				person1,
+				person2 {
+					font-size: $font-xl;
+				}
+				person1 {
 					color: $green;
 				}
-			}  /* .person-a */
-			.person-b {
-				strong {
+				person2 {
 					color: $blue;
 				}
-			}  /* .person-b */
-		}
+			}  /* <span></span> */
+		}  /* <blockquote></blockquote> */
 	}  /* .post-styles */
 	.blog-post-tags {
 		width: 100%;
@@ -148,9 +157,10 @@
 		border-bottom: 1px solid $gray;
 		.media-tag-link {
 			margin: 0 $small-gap;
+			color: $dgray;
 			display: inline-block;
 			&:hover, &:focus {
-				color: $lblack;
+				color: $blue;
 				transition: 0.1s linear color;
 			}  /* .media-tag-link:hover, .media-tag-link:focus */
 			.blog-post-tag-icon {
