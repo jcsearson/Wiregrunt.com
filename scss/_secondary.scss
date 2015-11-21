@@ -101,10 +101,11 @@
 		display: block;
 		@include font-stack-header;
 	}  /* .article-sub-title */
-	.web-repost {
-		color: $black!important;
-	}
 }  /* .article-title */
+
+.web-repost {
+	color: $green!important;
+}
 
 .sidebar-head-banner {
 	background: $dblack!important;
