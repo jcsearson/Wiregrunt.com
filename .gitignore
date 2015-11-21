@@ -3,6 +3,7 @@
 node_modules/*
 .DS_Store
 config.codekit
+prepros.cfg
 *.log
 sitemap.xml
 sitemap.xml.gz
