@@ -46,7 +46,7 @@
 			text-shadow: 0 1px 1px $lblack;
 		}  /* <h4></h4> */
 		p {
-			font-size: 1.25rem;
+			font-size: 1rem;
 			font-weight: 300;
 			letter-spacing: 1px;
 			word-spacing: 2px;
@@ -60,13 +60,14 @@
 			font-family: Consolas, Monaco, 'Andale Mono', monospace;
 		}  /* <code></code> */
 		strong {
-			text-shadow: 1px 1px 1px $black;
-			font-size: $font-large;
+			/* text-shadow: 1px 1px 1px $black; */
+			font-size: $font-med;
+			font-weight: 700;
 		}  /* <strong></strong> */
 		em {
 			font-weight: 300;
 			padding: 0 2px 0 0;
-			color: $gray;
+			color: $dgray;
 			font-style: italic;
 		}  /* <em></em> */
 		a {
@@ -112,13 +113,13 @@
 			height: auto;
 		}  /* <img> */
 		blockquote {
-			padding: $small-gap;
+			padding: $small-gap $large-gap;
 			color: $black;
-			font-size: 1.25rem;
+			font-size: $font-med;
 			background: #E8E8E8 url('../images/icons/svg/blog-media/blockquote-icon.svg') right bottom no-repeat;
 			strong {
 				font-weight: 700;
-				font-size: 1.5rem;
+				font-size: $font-larger;
 				text-shadow: 1px 1px 1px $black;
 				letter-spacing: 1px;
 				&:first-child {
@@ -137,7 +138,7 @@
 				padding: $med-gap 0;
 				person1,
 				person2 {
-					font-size: $font-xl;
+					font-size: $font-med;
 				}
 				person1 {
 					color: $green;
