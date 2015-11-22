@@ -31,8 +31,6 @@ input[type=search]:focus {
 	width: 270px;
 	background-color: #fff;
 	border-color: $white;
-
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
@@ -45,7 +43,7 @@ input[type=search]:focus {
 	cursor: pointer;
 }
 #search-wrapper input[type=search]:hover {
-	background: $lblack url(../images/icons/svg/blog-media/search-dark.svg) no-repeat center;
+	border: 3px solid $lblack;
 	background-size: 20px;
 	transition: 0.2s linear all;
 }
