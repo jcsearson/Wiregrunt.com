@@ -8,14 +8,13 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #CA7740;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	@include font-stack-code;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	line-height: 1.2;
-	/* display: inline-block; */
 	background: #222222!important;
 	font-weight: 400;
 	font-size: $font-med!important;
