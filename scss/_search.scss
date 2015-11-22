@@ -15,7 +15,7 @@ input[type=search] {
 	background: $lblack url(../images/icons/svg/blog-media/search.svg) no-repeat center;
 	fill: $white;
 	background-size: 20px;
-	border: 3px solid $green;
+	border: 2px solid $green;
 	padding: 9px 10px 9px 32px;
 	width: 155px;
 
@@ -43,7 +43,7 @@ input[type=search]:focus {
 	cursor: pointer;
 }
 #search-wrapper input[type=search]:hover {
-	border: 3px solid $blue;
+	border: 2px solid $blue;
 	background-size: 20px;
 	transition: 0.2s linear all;
 }
