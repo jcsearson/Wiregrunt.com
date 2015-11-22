@@ -92,14 +92,14 @@
 		font-size: $font-large;
 		display: block;
 		padding-bottom: $small-gap;
-		@include font-stack-header;
+		@include font-stack-brand;
 	}  /* .related-link */
 	.article-sub-title {
 		color: $gray;
 		padding-top: $med-gap;
 		font-size: $font-med;
 		display: block;
-		@include font-stack-header;
+		@include font-stack-brand;
 	}  /* .article-sub-title */
 }  /* .article-title */
 
@@ -123,7 +123,7 @@
 			letter-spacing: 1px;
 			text-shadow: 1px 1px 1px $lblack;
 			text-transform: uppercase;
-			@include font-stack-header;
+			@include font-stack-brand;
 		}  /* forum-category-link */
 		&:hover, &:focus {
 			background: $dgray;

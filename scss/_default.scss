@@ -9,50 +9,50 @@ body {
 
 h1 {
   font-size: $font-xxxl;
-  @include font-stack-header;
+  @include font-stack-brand;
 }
 
 h2 {
   font-size: $font-xxl;
-  @include font-stack-header;
+  @include font-stack-brand;
 }
 
 h3 {
   font-size: $font-large;
-  @include font-stack-header;
+  @include font-stack-brand;
 }
 
 h4 {
   font-size: $font-large;
-  @include font-stack-header;
+  @include font-stack-brand;
 }
 
 h5 {
   font-size: $font-med;
-  @include font-stack-header;
+  @include font-stack-brand;
 }
 
 p {
   line-height: 1;
   color: $lblack;
   font-size: $font-large;
-  @include font-stack-body;
+  @include font-stack-brand;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
   color: $blue;
-  @include font-stack-body;
+  @include font-stack-brand;
 }
 
 span {
   display: inline-block;
-  @include font-stack-body;
+  @include font-stack-brand;
 }
 
 li {
-  @include font-stack-body;
+  @include font-stack-brand;
 }
 
 // Makes a piece of text stand out within a body of text

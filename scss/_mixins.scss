@@ -29,15 +29,15 @@
       }
 }
 
-@mixin font-stack-header {
-  	font-family: 'Montserrat', sans-serif;
-      @include FOUTprevent;
-}  /* header */
-
-@mixin font-stack-body {
+@mixin font-stack-brand {
       font-family: 'Montserrat', sans-serif;
       @include FOUTprevent;
 }  /* body */
+
+@mixin font-stack-code {
+      font-family: Consolas, Monaco, 'Andale Mono', monospace;
+      @include FOUTprevent;
+}
 
 //----------------------------------------BREAKPOINTS--
 @mixin bp($point) {

@@ -33,7 +33,7 @@ footer {
 					color: $white;
 					font-size: .85rem;
 					text-shadow: none;
-					@include font-stack-header;
+					@include font-stack-brand;
 					&:hover, &:focus {
 						color: $lgreen;
 						transition: 0.1s linear color;
@@ -53,11 +53,11 @@ footer {
 				color: $white;
 				padding: 0 0 $med-gap 0;
 				font-size: $font-med;
-				@include font-stack-header;
+				@include font-stack-brand;
 				a {
 					letter-spacing: 2px;
 					color: $lgreen;
-					@include font-stack-body;
+					@include font-stack-brand;
 					&:hover, &:focus {
 						color: $green;
 						transition: 0.2s linear color;
@@ -121,7 +121,7 @@ footer {
 		p {
 			font-size: $font-med;
 			color: $gray;
-			@include font-stack-header;
+			@include font-stack-brand;
 		}  /* <p></p> */
 	}  /* copyright */
 }  /* .colophan */
