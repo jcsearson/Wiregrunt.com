@@ -3,21 +3,23 @@
 	padding: $xlarge-gap $xxxlarge-gap;
 	margin: 0 $med-gap $xxlarge-gap $med-gap;
 	.meta-box {
-		position: relative;
+		padding-bottom: 5px;
 		width: 100%;
+		position: relative;
 		display: block;
-		padding-bottom: 15px;
-		border-bottom: 1px solid $dgray;
+		overflow: hidden;
+		border-bottom: 1px solid $gray;
 		.post-title {
-			width: 75%;
+			width: 100%;
 			display: inline-block;
-			@include title-styles( 0 $med-gap $small-gap 0 );
+			@include title-styles( 0 0 0 0 );
 			a {
 				font-weight: 300;
 				text-shadow: 0 1px 2px $gray;
 				color: $black;
-				font-size: $font-xl;
-				@include font-stack-header;
+				font-size: 1.75rem;
+				text-transform: uppercase;
+				@include font-stack-brand;
 			}  /* <a></a> */
 		}  /* .post-title */
 		.post-meta {
@@ -27,7 +29,7 @@
 			padding: 0 0 $small-gap 0;
 			width: 75%;
 			display: inline-block;
-			@include font-stack-body;
+			@include font-stack-brand;
 			.post-category {
 				padding: 0 0 $tiny-gap 0;
 				color: $blue;
@@ -51,11 +53,11 @@
 			display: inline-block;
 		}
 		.titled-featured-img {
-			width: 12%;
-			display: inline-block;
+			max-width: 12%;
+			float: right;
 			position: absolute;
+			bottom: 10px;
 			right: 0;
-			top: 0;
 		}  /* .titled-featured-img */
 	}  /* .meta-box */
 	.post-styles {
@@ -71,22 +73,21 @@
 			text-shadow: 0 1px 1px $lblack;
 		}  /* <h4></h4> */
 		p {
-			font-size: 1rem;
-			font-weight: 400;
-			letter-spacing: 1px;
-			word-spacing: 2px;
+			font-size: 1.15rem;
+			font-weight: 300;
+			/* letter-spacing: 1px; */
+			/* word-spacing: 1px; */
 			margin: $xlarge-gap 0;
 			line-height: $lineh-large;
-			@include font-stack-body;
+			@include font-stack-brand;
 		}  /* <p></p> */
 		code {
+			font-size: 1rem;
 			padding: $tiny-gap $small-gap 0 $small-gap;
-			background: $lgray;
-			font-family: Consolas, Monaco, 'Andale Mono', monospace;
+			background: lighten($gray, 25%);
+			@include font-stack-code;
 		}  /* <code></code> */
 		strong {
-			/* text-shadow: 1px 1px 1px $black; */
-			font-size: $font-med;
 			font-weight: 700;
 		}  /* <strong></strong> */
 		em {
@@ -96,10 +97,9 @@
 			font-style: italic;
 		}  /* <em></em> */
 		a {
-			text-shadow: 1px 1px 1px $dgray;
-			color: $green;
+			color: $blue;
 			&:hover, &:focus {
-				color: $blue;
+				color: $green!important;
 			}
 		}
 		ul {
@@ -109,7 +109,7 @@
 				word-spacing: 1px;
 				padding: 4px 0;
 				color: $lblack;
-				font-size: $font-large;
+				font-size: $font-med;
 				a:hover, a:focus {
 					color: $blue;
 					transition: 0.2s linear color;
@@ -127,7 +127,7 @@
 			padding: 2px 0 4px 0;
 			color: $lblack;
 			list-style-position: inside;
-			@include font-stack-header;
+			@include font-stack-brand;
 		}  /* <li></li> */
 		img {
 			width: 100%;
@@ -161,13 +161,18 @@
 				padding: $med-gap 0;
 				person1,
 				person2 {
+					/* letter-spacing: 1px; */
 					font-size: $font-med;
+					text-transform: uppercase;
 				}
 				person1 {
 					color: $green;
 				}
 				person2 {
 					color: $blue;
+				}
+				em {
+					font-weight: 700;
 				}
 			}  /* <span></span> */
 		}  /* <blockquote></blockquote> */
