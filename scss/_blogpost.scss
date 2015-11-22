@@ -3,7 +3,14 @@
 	padding: $xlarge-gap $xxxlarge-gap;
 	margin: 0 $med-gap $xxlarge-gap $med-gap;
 	.meta-box {
+		position: relative;
+		width: 100%;
+		display: block;
+		padding-bottom: 15px;
+		border-bottom: 1px solid $dgray;
 		.post-title {
+			width: 75%;
+			display: inline-block;
 			@include title-styles( 0 $med-gap $small-gap 0 );
 			a {
 				font-weight: 300;
@@ -18,7 +25,8 @@
 			word-spacing: 1px;
 			font-size: $font-med;
 			padding: 0 0 $small-gap 0;
-			border-bottom: 1px solid $dgray;
+			width: 75%;
+			display: inline-block;
 			@include font-stack-body;
 			.post-category {
 				padding: 0 0 $tiny-gap 0;
@@ -31,12 +39,24 @@
 			.post-author {
 				padding: 0 0 $tiny-gap 0;
 				color: $blue;
+				display: inline-block;
 				&:hover, &:focus {
 					color: $lblack;
 					transition: 0.2s linear color;
 				}  /* .post-author:hover, .post-author:focus */
 			}  /* .post-author */
 		}  /* .post-meta */
+		.meta-writing {
+			width: 85%;
+			display: inline-block;
+		}
+		.titled-featured-img {
+			width: 12%;
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}  /* .titled-featured-img */
 	}  /* .meta-box */
 	.post-styles {
 		h1, h2, h3, h4, h5, h6 {
@@ -52,7 +72,7 @@
 		}  /* <h4></h4> */
 		p {
 			font-size: 1rem;
-			font-weight: 300;
+			font-weight: 400;
 			letter-spacing: 1px;
 			word-spacing: 2px;
 			margin: $xlarge-gap 0;
@@ -88,7 +108,6 @@
 				letter-spacing: 1px;
 				word-spacing: 1px;
 				padding: 4px 0;
-				/* font-size: $font-med; */
 				color: $lblack;
 				font-size: $font-large;
 				a:hover, a:focus {
@@ -106,7 +125,6 @@
 			letter-spacing: 1px;
 			word-spacing: 1px;
 			padding: 2px 0 4px 0;
-			/* font-size: $font-med; */
 			color: $lblack;
 			list-style-position: inside;
 			@include font-stack-header;
@@ -143,11 +161,7 @@
 				padding: $med-gap 0;
 				person1,
 				person2 {
-<<<<<<< HEAD
 					font-size: $font-med;
-=======
-					font-size: $font-larger;
->>>>>>> master
 				}
 				person1 {
 					color: $green;
