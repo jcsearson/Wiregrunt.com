@@ -1,4 +1,4 @@
-WireGrunt.com
+# WireGrunt.com
 
 ### Description:
 
@@ -12,6 +12,5 @@ This was a design version of the project for the website <a href="http://wiregru
 ### SVG Icons
 Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes" target="_blank">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon" target="_blank">Icomoon</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC BY 3.0</a>
 
-##### Contributor(s):  <a href="http://moviewake.com/" target="_blank">James C. Searson</a>
-
-##### License:  <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons 2.2</a>
+###### Contributor(s):  <a href="http://moviewake.com/" target="_blank">James C. Searson</a>
+###### License:  <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">Creative Commons 2.2</a>
