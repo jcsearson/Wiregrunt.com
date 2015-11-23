@@ -23,41 +23,26 @@
 			}  /* a:hover, a:focus */
 		}  /* <a></a> */
 	}  /* .section-title */
-	.side-content {
-		padding: $none;
-		margin: $none;
-		position: relative;
-		.article-title {
-			@include title-styles( $none $med-gap $small-gap $med-gap );
-			a {
-				letter-spacing: 1px;
-				line-height: $lineh-med;
-				width: 90%;
-				padding-left: $small-gap;
-				color: $dwhite;
-				font-size: $font-large;
-			}  /* <a></a> */
-		}  /* .article-title */
-	}  /* .side-content */
 	.article-links {
 		padding-top: $med-gap;
 	}  /* .article-links */
-	h2 {
-		color: $blue;
+	.sidebar-head-banner {
+		color: $gray;
 		font-size: $font-larger;
-		background: $dwhite;
 		padding: $small-gap $med-gap;
 		text-transform: uppercase;
 		text-align: right;
+		background: $dblack!important;
+		box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
+					   -1px 0 0 0 rgba(0, 0, 0, 0.2),
+					   0 1px 1px 0 rgba(0, 0, 0, 0.2),
+					   0 -1px 1px 0 rgba(0, 0, 0, 0.2);
 	}  /* <h2></h2> */
 	.post-categories {
 		background: $lblack;
 		padding-bottom: $small-gap;
-		.web-article {
-			.web-attribution {
-				color: $dgray;
-				font-style: italic;
-			}  /* .web-attribution */
+		.category-title {
+			color: $green!important;
 		}  /* .web-article */
 	}  /* .related-articles */
 }  /* .secondary */
@@ -72,7 +57,7 @@
 				   1px 0 0 0 transparent,
 				   -1px 0 0 0 transparent;
 	&:hover, &:focus {
-		background: $white;
+		background: lighten($lblack, 5%);
 		cursor: pointer;
 		outline: none;
 		box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
@@ -87,13 +72,6 @@
 			transition: 0.1s linear all;
 		}  /* .article-title:hover &:last-child */
 	}  /* .article-title:hover, .article-title:focus */
-	.related-link {
-		color: $lblack;
-		font-size: $font-large;
-		display: block;
-		padding-bottom: $small-gap;
-		@include font-stack-brand;
-	}  /* .related-link */
 	.article-sub-title {
 		color: $gray;
 		padding-top: $med-gap;
@@ -102,32 +80,3 @@
 		@include font-stack-brand;
 	}  /* .article-sub-title */
 }  /* .article-title */
-
-.web-repost {
-	color: $green!important;
-}
-
-.sidebar-head-banner {
-	background: $dblack!important;
-	box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2),
-					   -1px 0 0 0 rgba(0, 0, 0, 0.2),
-					   0 1px 1px 0 rgba(0, 0, 0, 0.2),
-					   0 -1px 1px 0 rgba(0, 0, 0, 0.2);
-}
-.forum-cat-links {
-	background: $palewhite;
-	.forum-category-title {
-		.forum-category-link {
-			color: $green;
-			font-size: $font-large;
-			letter-spacing: 1px;
-			text-shadow: 1px 1px 1px $lblack;
-			text-transform: uppercase;
-			@include font-stack-brand;
-		}  /* forum-category-link */
-		&:hover, &:focus {
-			background: $dgray;
-			transition: 0.2s linear all;
-		}  /* forum-category-title:hover, forum-category-title:focus */
-	}  /* forum-category-title */
-}  /* .forum-cat-links */
