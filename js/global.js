@@ -5,8 +5,8 @@ $currentScreen.scroll(function () {
 	var scroll = $currentScreen.scrollTop();
 
 	if (scroll >= 100) {
-		$logoBlock.addClass( "make-blue" );
+		$logoBlock.addClass( "light-up" );
 	} else {
-		$logoBlock.removeClass( "make-blue" );
+		$logoBlock.removeClass( "light-up" );
 	}
 });
