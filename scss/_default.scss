@@ -91,3 +91,8 @@ i {
 .light-up {
   color: $green;
 }  /* .make-blue */
+
+.make-blue {
+    border-color: 2px solid $green;
+    border-radius: 10em;
+}
