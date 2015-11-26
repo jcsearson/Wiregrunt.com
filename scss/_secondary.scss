@@ -30,6 +30,7 @@
 		color: $gray;
 		font-size: $font-larger;
 		padding: $small-gap $med-gap;
+		font-weight: 300;
 		text-transform: uppercase;
 		text-align: right;
 		background: $dblack!important;
@@ -57,7 +58,7 @@
 				   1px 0 0 0 transparent,
 				   -1px 0 0 0 transparent;
 	.article-sub-title {
-		color: lighten($lblack, 10%);
+		color: lighten($lblack, 20%);
 		padding-top: $med-gap;
 		font-size: $font-med;
 		display: block;
