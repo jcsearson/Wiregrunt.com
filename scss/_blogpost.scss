@@ -62,7 +62,7 @@
 	}  /* .meta-box */
 	.post-styles {
 		h1, h2, h3, h4, h5, h6 {
-			position: $xlarge-gap 0 $large-gap 0;
+			padding: $xlarge-gap 0 $large-gap 0;
 		}
 		h2 {
 			font-size: $font-xl;
@@ -75,15 +75,13 @@
 		p {
 			font-size: 1.15rem;
 			font-weight: 300;
-			/* letter-spacing: 1px; */
-			/* word-spacing: 1px; */
 			margin: $xlarge-gap 0;
 			line-height: $lineh-large;
 			@include font-stack-brand;
 		}  /* <p></p> */
 		code {
 			font-size: 1rem;
-			padding: $tiny-gap $small-gap 0 $small-gap;
+			padding: $tiny-gap $small-gap $small-gap $small-gap;
 			background: lighten($gray, 25%);
 			@include font-stack-code;
 		}  /* <code></code> */

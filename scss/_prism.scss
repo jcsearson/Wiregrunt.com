@@ -18,15 +18,15 @@ pre[class*="language-"] {
 	background: #222222!important;
 	font-weight: 400;
 	font-size: $font-med!important;
+	padding: 0 0 $med-gap 0;
+	margin: $med-gap 0 0 0;
 
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
 
-	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
-	hyphens: none;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -51,7 +51,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-	margin: .5em;
+	margin: .5em 0;
 	overflow: auto;
 	padding: 20px 10px;
 	display: block;
