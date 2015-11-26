@@ -77,18 +77,6 @@ nav {
 	@include span(4 of 12 last);
 }  /* .secondary, .subscriber-input */
 
-.tertiary {
-	margin-top: $large-gap;
-	@include span(12);
-}
-
-.resources {
-	@include container;
-	.resource-block {
-		@include span(2);
-	}
-}
-
 footer {
 	width: 100%;
 	bottom: 0;
