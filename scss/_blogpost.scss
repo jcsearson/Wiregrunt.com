@@ -97,9 +97,9 @@
 			font-style: italic;
 		}  /* <em></em> */
 		a {
-			color: $blue;
+			color: $green;
 			&:hover, &:focus {
-				color: $green!important;
+				color: $dblue!important;
 			}
 		}
 		ul {
