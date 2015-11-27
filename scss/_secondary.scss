@@ -41,11 +41,20 @@
 	}  /* <h2></h2> */
 	.post-categories {
 		background: $lblack;
-		padding-bottom: $small-gap;
 		.category-title {
 			color: $green!important;
 		}  /* .web-article */
 	}  /* .related-articles */
+	.repost-articles {
+		background: $lblack;
+		a {
+			display: block;
+			.img-repost {
+				display: block;
+				margin: 1rem auto;
+			}
+		}
+	}
 }  /* .secondary */
 
 .article-title {
