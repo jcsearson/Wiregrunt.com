@@ -81,8 +81,10 @@
 		}  /* <p></p> */
 		code {
 			font-size: 1rem;
-			padding: $tiny-gap $small-gap $small-gap $small-gap;
+			line-height: 1.2;
+			padding: 0 .5rem 0 .5rem;
 			background: lighten($gray, 25%);
+			display: inline-block;
 			@include font-stack-code;
 		}  /* <code></code> */
 		strong {
@@ -101,11 +103,11 @@
 			}
 		}
 		ul {
-			margin: 0 0 $xxxlarge-gap 0;
+			margin: $med-gap 0;
 			li {
 				letter-spacing: 1px;
 				word-spacing: 1px;
-				padding: 4px 0;
+				padding: .2rem 0 .2rem 1rem;
 				color: $lblack;
 				font-size: $font-med;
 				a:hover, a:focus {
@@ -138,6 +140,7 @@
 			color: $black;
 			font-size: $font-med;
 			background: #E8E8E8 url('../images/icons/svg/blog-media/blockquote-icon.svg') right bottom no-repeat;
+			@include font-stack-brand;
 			strong {
 				font-weight: 700;
 				font-size: $font-larger;
