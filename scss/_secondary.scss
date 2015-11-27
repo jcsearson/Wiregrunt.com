@@ -46,8 +46,10 @@
 		}  /* .web-article */
 	}  /* .related-articles */
 	.repost-articles {
-		background: $lblack;
+		margin: 1rem;
+		background: $dwhite;
 		a {
+			padding: 1.5rem 0;
 			display: block;
 			.img-repost {
 				display: block;
