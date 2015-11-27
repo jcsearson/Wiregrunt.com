@@ -63,7 +63,7 @@ input[type=search]:focus {
 }
 #search-wrapper {
 	float: right;
-	margin-top: 1.75rem;
+	margin-top: 1.25rem;
 	margin-right: 1rem;
 	@include clearfix;
 	@include bp(mama) {
