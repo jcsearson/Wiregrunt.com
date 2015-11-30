@@ -37,7 +37,7 @@
 <p>Many will urge you to take the website down, at least until you are able to remove anything harmful. I agree with this but should note that it was not something I considered a viable option.</p>
 <p>As far as I was concerned, the files were found quickly, and within an hour I had cleaned up any backdoors and potential exploits. If you are not sure that these things are closed, then with all means bring the site offline until you can be certain.</p>
 <h2>Step 2: Initial Security Maneuvers</h2>
-<p>Immediately after removing the new user I implemented a new password policy and then proceeded to update all passwords for administrative accounts. I then went into the configuration file (<code>wp-config.php</code>) and switched out the authentication salts.</p>
+<p>Immediately after removing the new user, I implemented a new password policy and then proceeded to update all passwords for administrative accounts. It was then over to the Wordpress configuration file (<code>wp-config.php</code>) to switch out authentication salts.</p>
 <p>What this does is rather immediate: anyone seeking logged-in content on the website will have to provide a password beforehand. So the next time a logged-in user sends a request for anything on the site, they will be logged out and asked to provide their credentials to get back in. Go <a href="https://api.wordpress.org/secret-key/1.1/salt/">here</a> (<em>refresh the page to generate new ones</em>) to get new salts:</p>
 <pre><code class="language-php">
 define('AUTH_KEY', '&amp;|wTaDllVPP&lt;}{I!+|)]/udF#DEsUpVXWzJkrDd,&lt;8V#]M{?B-~KYP)1&amp;S r!X)q');
@@ -80,9 +80,9 @@ deny from all
 <h2>Additional Resources</h2>
 <p>I finish my story by reminding any readers that this is but only the tip of the iceberg. I may have left out certain preventative and/or damage-management steps simply because they did not apply to my situation or I felt were not a good fit for this article. If you have little experience but are trying to deal with getting hacked, allow me to point you to the following places in an attempt to seek relief:</p>
 <ul>
-<li><a href="https://codex.wordpress.org/FAQ_My_site_was_hacked">Wordpress Article | What to do when your site is hacked</a></li>
-<li><a href="https://codex.wordpress.org/Hardening_WordPress">Wordpress Article | Common Vulnerabilities &amp; Preventative Measures</a></li>
-<li><a href="https://codex.wordpress.org/Brute_Force_Attacks">Wordpress Article | Brute Force Attacks &amp; How to Stop Them</a></li>
-<li><a href="http://docs.wordfence.com/en/How_do_I_clean_my_hacked_site_using_Wordfence%3F">Wordfence | Guide to Handling Attacks on your Website</a></li>
+<li><a href="https://codex.wordpress.org/FAQ_My_site_was_hacked">What to do when your site is hacked</a></li>
+<li><a href="https://codex.wordpress.org/Hardening_WordPress">Common Vulnerabilities &amp; Preventative Measures</a></li>
+<li><a href="https://codex.wordpress.org/Brute_Force_Attacks">Brute Force Attacks &amp; How to Stop Them</a></li>
+<li><a href="http://docs.wordfence.com/en/How_do_I_clean_my_hacked_site_using_Wordfence%3F">Guide to Handling Attacks on your Website</a></li>
 </ul>
 <p>Another good place to look for help is at www.stopbadware.org which will perform independent reviews of your site. They also have a great <a href="https://www.stopbadware.org/hacked-sites-resources">resources page</a>.</p>
