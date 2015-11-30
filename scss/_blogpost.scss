@@ -19,7 +19,7 @@
 				color: $black;
 				font-size: 1.75rem;
 				text-transform: uppercase;
-				@include font-stack-brand;
+				@include font-stack-blog;
 			}  /* <a></a> */
 		}  /* .post-title */
 		.post-meta {
@@ -29,7 +29,7 @@
 			padding: 0 0 $small-gap 0;
 			width: 75%;
 			display: inline-block;
-			@include font-stack-brand;
+			@include font-stack-blog;
 			.post-category {
 				padding: 0 0 $tiny-gap 0;
 				color: $blue;
@@ -73,11 +73,11 @@
 			text-shadow: 0 1px 1px $lblack;
 		}  /* <h4></h4> */
 		p {
-			font-size: 1.15rem;
+			font-size: 1.35rem;
 			font-weight: 300;
 			margin: $xlarge-gap 0;
 			line-height: $lineh-large;
-			@include font-stack-brand;
+			@include font-stack-blog;
 		}  /* <p></p> */
 		code {
 			font-size: 1rem;
@@ -98,6 +98,7 @@
 		}  /* <em></em> */
 		a {
 			color: $green;
+			@include font-stack-blog;
 			&:hover, &:focus {
 				color: $dblue!important;
 			}
@@ -106,10 +107,11 @@
 			margin: $med-gap 0;
 			li {
 				letter-spacing: 1px;
+				font-size: 1.35rem;
 				word-spacing: 1px;
 				padding: .2rem 0 .2rem 1rem;
 				color: $lblack;
-				font-size: $font-med;
+				@include font-stack-blog;
 				a:hover, a:focus {
 					color: $blue;
 					transition: 0.2s linear color;
@@ -127,7 +129,7 @@
 			padding: 2px 0 4px 0;
 			color: $lblack;
 			list-style-position: inside;
-			@include font-stack-brand;
+			@include font-stack-blog;
 		}  /* <li></li> */
 		img {
 			width: 100%;
@@ -160,10 +162,11 @@
 			span {
 				font-weight: 700;
 				padding: $med-gap 0;
+				@include font-stack-brand;
 				person1,
 				person2 {
 					/* letter-spacing: 1px; */
-					font-size: $font-med;
+					font-size: $font-large;
 					text-transform: uppercase;
 				}
 				person1 {
@@ -187,10 +190,10 @@
 		border-bottom: 1px solid $gray;
 		.media-tag-link {
 			margin: 0 $small-gap;
-			color: $dgray;
+			color: $blue;
 			display: inline-block;
 			&:hover, &:focus {
-				color: $blue;
+				color: $dgray;
 				transition: 0.1s linear color;
 			}  /* .media-tag-link:hover, .media-tag-link:focus */
 			.blog-post-tag-icon {
