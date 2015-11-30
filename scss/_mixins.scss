@@ -34,6 +34,11 @@
       @include FOUTprevent;
 }  /* body */
 
+@mixin font-stack-blog {
+      font-family: 'Lora', serif;
+      @include FOUTprevent;
+}  /* body */
+
 @mixin font-stack-code {
       font-family: "Source Code Pro", monospace;
       @include FOUTprevent;
