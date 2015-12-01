@@ -10,12 +10,12 @@ pre[class*="language-"] {
 	color: black;
 	direction: ltr;
 	text-align: left;
-	white-space: pre;
+
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: $font-med!important;
 	@include font-stack-code;
 
