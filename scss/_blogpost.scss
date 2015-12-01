@@ -14,10 +14,10 @@
 			display: inline-block;
 			@include title-styles( 0 0 0 0 );
 			a {
-				font-weight: 300;
+				font-weight: 500;
 				text-shadow: 0 1px 2px $gray;
 				color: $black;
-				font-size: 1.75rem;
+				font-size: 1.85rem;
 				text-transform: uppercase;
 				@include font-stack-blog;
 			}  /* <a></a> */
@@ -73,18 +73,21 @@
 			text-shadow: 0 1px 1px $lblack;
 		}  /* <h4></h4> */
 		p {
-			font-size: 1.35rem;
+			font-size: 1.5rem;
 			font-weight: 300;
-			margin: $xlarge-gap 0;
-			line-height: $lineh-large;
+			margin: 2.75rem 0;
+			line-height: 1.5;
+			word-spacing: 1px;
 			@include font-stack-blog;
 		}  /* <p></p> */
 		code {
 			font-size: 1rem;
 			line-height: 1.2;
-			padding: 0 .5rem 0 .5rem;
+			padding: 0 .5rem;
 			background: lighten($gray, 25%);
+			word-spacing: none;
 			display: inline-block;
+			font-weight: 500;
 			@include font-stack-code;
 		}  /* <code></code> */
 		strong {
