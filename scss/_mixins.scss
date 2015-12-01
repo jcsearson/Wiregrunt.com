@@ -16,6 +16,16 @@
       border: $small-gap solid $border-color;
 }  /* sidebar-styles */
 
+//----------------------------------------ANIMATION--
+@keyframes shake {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
 //----------------------------------------FONTS--
 @-webkit-keyframes fontfix {
       from { opacity: 1; }
@@ -35,7 +45,7 @@
 }  /* body */
 
 @mixin font-stack-blog {
-      font-family: 'Lora', serif;
+      font-family: 'Cardo', serif;
       @include FOUTprevent;
 }  /* body */
 
@@ -43,6 +53,10 @@
       font-family: "Source Code Pro", monospace;
       @include FOUTprevent;
 }
+/* @mixin font-stack-sample2 {
+      font-family: 'Crimson Text', serif;
+      @include FOUTprevent;
+} */
 
 //----------------------------------------BREAKPOINTS--
 @mixin bp($point) {
