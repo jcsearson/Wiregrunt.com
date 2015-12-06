@@ -16,7 +16,7 @@
 			font-weight: 300;
 			color: $dblue;
 			line-height: $lineh-med;
-			font-size: $font-larger;
+			font-size: $font-large;
 			&:hover, &:focus {
 				color: $green;
 				transition: 0.1s linear color;
@@ -25,10 +25,11 @@
 	}  /* .section-title */
 	.article-links {
 		padding-top: $med-gap;
+		text-transform: uppercase;
 	}  /* .article-links */
 	.sidebar-head-banner {
 		color: $gray;
-		font-size: $font-larger;
+		font-size: $font-large;
 		padding: $small-gap $med-gap;
 		font-weight: 300;
 		text-transform: uppercase;
@@ -75,7 +76,8 @@
 
 .article-title {
 	padding: $small-gap $med-gap;
-	font-size: $font-large;
+	font-size: $font-med;
+	text-transform: uppercase;
 	background: none;
 	display: block;
 	box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1),
@@ -86,6 +88,7 @@
 		color: lighten($lblack, 20%);
 		padding-top: $med-gap;
 		font-size: $font-med;
+		text-transform: none;
 		display: block;
 		@include font-stack-brand;
 	}  /* .article-sub-title */
