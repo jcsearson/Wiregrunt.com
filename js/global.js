@@ -6,7 +6,7 @@ $currentScreen.scroll(function () {
   'use strict';
   var scroll = $currentScreen.scrollTop();
 
-  if (scroll >= 100) {
+  if (scroll >= 25) {
     $logoBlock.addClass( "light-up" ),
     $searchGreen.addClass( " make-blue" );
   } else {
