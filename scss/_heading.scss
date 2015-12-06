@@ -2,12 +2,12 @@
 	z-index: 999;
 	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.6);
 	background: $lblack;
-	margin-bottom: $large-gap;
+	margin-bottom: $xxlarge-gap;
 	border-bottom: 0.3rem solid $blue;
 }  /* .heading */
 
 header {
-	padding: $large-gap 0;
+	padding: $med-gap 0 $large-gap 0;
 	> a {
 		letter-spacing: 1px;
 		color: $blue;
@@ -20,32 +20,38 @@ header {
 		span {
 			top: 4px;
 			letter-spacing: 3px;
-			font-size: $font-med;
+			font-size: $font-xl;
 			color: $dwhite;
 			position: relative;
 		}  /* <span></span> */
 	}  /* > a */
 }  /* /header */
 
-.menu {
+.search-block {
 	padding: 0 $tiny-gap $large-gap 0;
 }  /* .menu */
 
-.nav-list {
-	.nav-item-box {
-		padding: 0 $large-gap;
-		a {
-			letter-spacing: 2px;
-			line-height: 1;
-			color: $dwhite;
-			padding: $small-gap 0 $small-gap 0;
-			font-size: $font-small;
-			text-transform: uppercase;
-			@include font-stack-brand;
-			&:hover, &:focus {
-				border-bottom: 1px solid $lgreen;
-				transition: 0.1s linear all;
-			}  /* a:hover, a:focus */
-		}  /* <a></a> */
-	}  /* .nav-item-box */
-}  /* .nav-list */
+.nav-container {
+	width: 100%;
+	background: darken($dgray, 10%);
+	.nav-bar {
+		padding: $tiny-gap 0 $tiny-gap $large-gap*2;
+		.nav-item {
+			margin-left: $med-gap;
+			display: inline-block;
+			&:first-child {
+				margin-left: 0;
+			}
+			.nav-item-link {
+				color: $white;
+				font-size: $font-small;
+				letter-spacing: .05rem;
+				text-transform: uppercase;
+				&:hover, &:focus {
+					color: $green;
+					transition: 0.1s linear color;
+				}
+			}
+		}
+	}
+}
