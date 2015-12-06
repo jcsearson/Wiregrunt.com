@@ -36,17 +36,11 @@ header {
 	@include span(4 of 12 first);
 }  /* <header></header> */
 
-nav {
-	float: right;
-	.nav-list {
-		.nav-item-box {
-			display: inline-block;
-			> a {
-				padding: 0.6rem 0 0 0;
-			}  /* <a></a> */
-		}  /* .nav-item-box */
-	}  /* .nav-list */
-}  /* nav */
+.nav-container {
+	.nav-bar {
+		@include container;
+	}  /* .nav-bar */
+}  /* .nav-container */
 
 .feature-article-container {
 	@include container;
@@ -76,6 +70,11 @@ nav {
 .secondary {
 	@include span(4 of 12 last);
 }  /* .secondary, .subscriber-input */
+.contact {
+	.contact-preamble {
+		@include span(12);
+	}
+}
 
 footer {
 	width: 100%;
