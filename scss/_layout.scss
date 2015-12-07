@@ -59,7 +59,7 @@ header {
 }  /* .feature-article-container */
 
 .main-content {
-	@include container;
+	@include container(12);
 	margin: $large-gap auto $large-gap auto;
 }  /*.main-content*/
 
@@ -70,9 +70,12 @@ header {
 .secondary {
 	@include span(4 of 12 last);
 }  /* .secondary, .subscriber-input */
-.contact {
-	.contact-preamble {
-		@include span(12);
+.contact-page {
+	display: block;
+	margin: 7.5rem auto 2.5rem auto;
+	@include container(12);
+	.contact-container {
+		@include span(8 of 12);
 	}
 }
 
