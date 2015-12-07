@@ -109,6 +109,10 @@
 		}
 		ul {
 			margin: $med-gap 0;
+			li:before{
+				content: ">  ";
+				color: $gray;
+			}
 			li {
 				letter-spacing: 1px;
 				font-size: 1.35rem;
@@ -166,21 +170,19 @@
 			span {
 				font-weight: 700;
 				padding: $med-gap 0;
+				font-style: italic;
 				@include font-stack-brand;
 				person1,
 				person2 {
-					/* letter-spacing: 1px; */
 					font-size: $font-large;
 					text-transform: uppercase;
+					font-style: normal;
 				}
 				person1 {
 					color: $green;
 				}
 				person2 {
 					color: $blue;
-				}
-				em {
-					font-weight: 700;
 				}
 			}  /* <span></span> */
 		}  /* <blockquote></blockquote> */
