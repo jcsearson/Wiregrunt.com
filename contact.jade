@@ -28,7 +28,13 @@ body
 				li Happy form-filling!
 
 		section(class="contact-container" role="form")
-			form(class="contact-form" method="post" action="")
+			form(class="contact-form" method="post" action="/contact-send" accept-charset="UTF-8" novalidate autocomplete="off")
+				input(type="text" class="user-first-name" placeholder="first" name="user_first_name")
+				input(type="text" class="user-last-name" placeholder="last" name="user_first_name")
+				input(type="email" class="user-email" placeholder="user@webmail.com" name="user_email")
+				textarea(name="user_message", class="user-message", cols="30", rows="10", placeholder="This message is regarding...")
+				input(type="submit" class="user-submission" value="submit")
+
 
 	include parts/footer.jade
 include jades/scripts.jade

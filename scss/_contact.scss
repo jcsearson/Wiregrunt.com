@@ -17,6 +17,62 @@
 
 .contact-container {
 	.contact-form {
+		padding: 2rem;
+		border: 2px solid $black;
+		overflow: hidden;
+		input {
+			line-height: 1;
+			padding: .25rem 1rem 0 1rem;
+			margin: 1rem 0;
+			border: 2px solid $gray;
+			font-size: $font-med;
+			display: inline-block;
+			box-sizing: border-box;
+		}
+		input::-webkit-input-placeholder {
+			font-size: $font-med;
+		}
+		input:focus::-webkit-input-placeholder {
+			transition: opacity 0.1s 0.1s linear;
+			opacity: 0;
+		}
+		.user-first-name {
+			margin: .5rem 0;
+			width: 10rem;
+			height: 2rem;
+		}  /* user-first-name */
+		.user-last-name {
+			margin: .5rem 0;
+			width: 10rem;
+			height: 2rem;
+		}  /* user-last-name */
+		.user-email {
+			width: 15rem;
+			height: 2rem;
+			display: block;
+		}  /* user-email */
+		textarea {
+			width: 20rem;
+			line-height: 1;
+			height: 8rem;
+			padding: .25rem 1rem 0 1rem;
+			border: 2px solid $gray;
+			font-size: $font-med;
+			display: block;
+			&:focus {
+				outline: 0;
+				box-shadow: none;
+			}
+		}  /* user-message */
+		textarea::-webkit-input-placeholder {
+			font-size: $font-med;
+		}
+		textarea:focus::-webkit-input-placeholder {
+			transition: opacity 0.1s 0.1s linear;
+			opacity: 0;
+		}
+		.user-submission {
 
+		}  /* user-submission */
 	}  /* .contact-form */
 }  /* contact-container */
