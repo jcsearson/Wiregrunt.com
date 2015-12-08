@@ -7,7 +7,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: black;
+	color: $dwhite;
 	direction: ltr;
 	text-align: left;
 
@@ -32,13 +32,11 @@ pre[class*="language-"] {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: #575757;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
-	background: #575757;
 }
 
 @media print {
@@ -55,6 +53,7 @@ pre[class*="language-"] {
 	> code[class*="language-"] {
 		padding: 1rem;
 		line-height: 2;
+		background: $lblack!important;
 		@include font-stack-code;
 	}
 }
@@ -67,7 +66,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-	color: #302F30;
+	color: $dwhite;
 }
 
 .namespace {
@@ -95,7 +94,7 @@ pre[class*="language-"] {
 .token.entity,
 .token.url,
 .style .token.string {
-	color: #302F30;
+	color: $dwhite;
 }
 
 .token.atrule,
