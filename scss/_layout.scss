@@ -70,14 +70,20 @@ header {
 .secondary {
 	@include span(4 of 12 last);
 }  /* .secondary, .subscriber-input */
+
 .contact-page {
 	display: block;
 	margin: 7.5rem auto 2.5rem auto;
 	@include container(12);
+	.contact-preamble {
+		@include span(5 of 12 first);
+	}  /* .contact-preamble */
 	.contact-container {
-		@include span(8 of 12);
-	}
-}
+		top: 4rem;
+		position: relative;
+		@include span(6 of 12 last);
+	}  /* .contact-container */
+}  /* .contact-page */
 
 footer {
 	width: 100%;
