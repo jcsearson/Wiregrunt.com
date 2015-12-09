@@ -10,10 +10,9 @@
       margin: 0 20%;
       fill: $social-icon-color;
 }  /* social-media-styles */
-@mixin sidebar-styles( $border-color, $background-color ) {
-      padding: $none;
+@mixin sidebar-styles( $padding, $background-color ) {
+      padding: $padding;
       background: $background-color;
-      border: $small-gap solid $border-color;
 }  /* sidebar-styles */
 
 //----------------------------------------ANIMATION--
