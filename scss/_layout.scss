@@ -2,7 +2,7 @@
 //====================================
 $susy: (
 	columns: 12,
-	gutters: 1/6,
+	gutters: 1/4	,
 	math: fluid,
 	output: float,
 	gutter-position: split,
@@ -33,7 +33,7 @@ header {
 	padding: 2rem 0;
 	float: left;
 	display: inline-block;
-	@include span(4 of 12 first);
+	@include span(6 of 12 first);
 }  /* <header></header> */
 
 .nav-container {
