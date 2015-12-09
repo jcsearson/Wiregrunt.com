@@ -1,7 +1,7 @@
 .secondary {
 	margin: $med-gap $med-gap $xxlarge-gap 0;
 	display: block;
-	@include sidebar-styles( none, $lblack );
+	@include sidebar-styles( $none, $lblack );
 	&:last-child {
 		margin: $none $med-gap $xxlarge-gap $none;
 	}  /* .secondary:last-child */
