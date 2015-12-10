@@ -1,16 +1,12 @@
 input {
 	outline: none;
-}
-input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
-}
+}  /* input */
+
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
 	display: none;
-}
+}  /* input::-webkit-search-decoration, input::-webkit-search-cancel-button */
+
 input[type=search] {
 	background: $lblack url(../images/icons/svg/blog-media/search.svg) no-repeat center;
 	fill: $white;
@@ -19,19 +15,30 @@ input[type=search] {
 	padding: 9px 10px 9px 32px;
 	width: 155px;
 
+	font-family: inherit;
+	font-size: 100%;
+
 	-moz-border-radius: 10em;
 	border-radius: 10em;
 
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	transition: all .5s;
-}
+
+	@include bp(mama) {
+		width: 280px;
+		background-position: 10px 10px;
+	}
+}  /* input[type=search] */
+
 input[type=search]:focus {
 	width: 270px;
 	background-color: #fff;
 	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	box-shadow: 0 0 5px rgba(109,207,246,.5);
-}
+}  /* input[type=search]:focus */
 
 #search-wrapper input[type=search] {
 	width: 25px;
@@ -39,28 +46,33 @@ input[type=search]:focus {
 	padding-left: 10px;
 	color: transparent;
 	cursor: pointer;
-}
+}  /* #search-wrapper input[type=search] */
 #search-wrapper input[type=search]:hover {
 	border: 2px solid $green;
 	background-size: 20px;
 	transition: 0.2s linear all;
-}
+}  /* #search-wrapper input[type=search]:hover */
+
 #search-wrapper input[type=search]:focus {
 	width: 20rem;
 	padding-left: 32px;
 	color: #000;
 	cursor: auto;
 	background: $white;
-}
+}  /* #search-wrapper input[type=search]:focus */
+
 #search-wrapper input:-moz-placeholder {
 	color: transparent;
-}
+}  /* #search-wrapper input:-moz-placeholder */
+
 #search-wrapper input::-webkit-input-placeholder {
 	color: transparent;
-}
+}  /* #search-wrapper input::-webkit-input-placeholder */
+
 .search-submit {
 	display: none;
-}
+}  /* .search-submit */
+
 #search-wrapper {
 	float: right;
 	margin-top: 1.25rem;
@@ -71,10 +83,4 @@ input[type=search]:focus {
 		display: block;
 		width: 100%;
 	}
-	input[type=search] {
-		@include bp(mama) {
-			width: 280px;
-			background-position: 10px 10px;
-		}
-	}
-}  //  #search-wrapper
+}  /* #search-wrapper */
