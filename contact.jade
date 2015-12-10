@@ -4,39 +4,17 @@ body
 	div.contact-page
 		div.contact-preamble
 			h2 Looking to get in touch?
-			h4 Before you do, please consider the following:
-			ul
-				li Do you REALLY need to contact me?
-				li If you aren't a developer, is this really worthwhile?
-				li I'm always interested in working on new projects!
-				li But am only really interested in talking to developers.
-				li It's nothing personal...
-				li I just dont believe in management jobs when it comes to code.
-				li I mean, can you believe how much some of those guys make??
-				li And they don't even know how to write code.
-				li So remind me why we pay them so much?
-				li Have you created websites before?
-				li Well, before you take time to send me something...
-				li Keep in mind that I have written a rather detailed contact form.
-				li One that will ultimately make the decisions for me.
-				li Much like Santa's elves decide who is naughty, and who's nice.
-				li Do I need to read this?
-				li Is it an attempt to express frustration over something I've said?
-				li A fellow coder who wants to collaborate?
-				li Let that one through!
-				li You get the idea...
-				li Happy form-filling!
+			h4 Fill out a form and I will reach out to you as soon as possible:
 
 		section(class="contact-container" role="form")
 			form(class="contact-form" method="post" action="/contact-send" accept-charset="UTF-8" novalidate autocomplete="off")
-				input(type="text" class="user-first-name" placeholder="first" name="user_first_name")
-				input(type="text" class="user-last-name" placeholder="last" name="user_first_name")
-				input(type="email" class="user-email" placeholder="user@webmail.com" name="user_email")
-				textarea(name="user_message", class="user-message", cols="30", rows="10", placeholder="This message is regarding...")
-				button(type="submit" class="user-submission" value="submit" name="submit_form")
-					include images/icons/svg/blog-media/send-opt.svg
-
-
-
+				fieldset
+					input(type="text" class="user-first-name" placeholder="first" name="user_first_name")
+					input(type="text" class="user-last-name" placeholder="last" name="user_first_name")
+					input(type="email" class="user-email" placeholder="user@webmail.com" name="user_email")
+					textarea(name="user_message", class="user-message", cols="30", rows="10", placeholder="This message is regarding...")
+					button(type="submit" class="user-submission" value="submit" name="submit_form")
+						include images/icons/svg/blog-media/send-opt.svg
+		include parts/alt-sidebar.jade
 	include parts/footer.jade
 include jades/scripts.jade
