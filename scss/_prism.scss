@@ -27,7 +27,7 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-}
+}  /* code[class*="language-"], pre[class*="language-"] */
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
@@ -55,23 +55,23 @@ pre[class*="language-"] {
 		line-height: 2;
 		background: $lblack!important;
 		@include font-stack-code;
-	}
-}
+	}  /* code[class*="language-"] */
+}  /* pre[class*="language-"] */
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
 	color: #5C89AD;
-}
+}  /* .token.comment, .token.prolog, .token.doctype, .token.cdata */
 
 .token.punctuation {
 	color: $dwhite;
-}
+}  /* .token.punctuation */
 
 .namespace {
 	opacity: .7;
-}
+}  /* .namespace */
 
 .token.property,
 .token.boolean,
@@ -79,7 +79,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.deleted {
 	color: #7B56AF;
-}
+}  /* .token.property, .token.boolean, .token.number, .token.constant, .token.deleted */
 
 .token.selector,
 .token.attr-name,
@@ -88,43 +88,44 @@ pre[class*="language-"] {
 .token.builtin,
 .token.inserted {
 	color: #3965AF;
-}
+}  /* .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted */
 
 .token.operator,
 .token.entity,
 .token.url,
 .style .token.string {
 	color: $dwhite;
-}
+}  /* .token.operator, .token.entity, .token.url, .style .token.string */
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
 	color: #2E764B;
-}
+}  /* .token.atrule, .token.attr-value, .token.keyword */
 
 .token.function {
 	color: #894B74;
-}
+}  /* .token.function */
 
 .token.regex,
 .token.important,
 .token.variable {
 	color: #CB2C20;
-}
+}  /* .token.regex, .token.important, .token.variable */
 
 .token.important,
 .token.bold {
 	font-weight: bold;
-}
+}  /* .token.important, .token.bold */
+
 .token.italic {
 	font-style: italic;
-}
+}  /* .token.italic */
 
 .token.entity {
 	cursor: help;
-}
+}  /* .token.entity */
 
 div.prism-show-language {
 	position: relative;
-}
+}  /* div.prism-show-language */

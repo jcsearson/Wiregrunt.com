@@ -51,7 +51,7 @@
 		.meta-writing {
 			width: 85%;
 			display: inline-block;
-		}
+		}  /* .meta-writing */
 		.titled-featured-img {
 			max-width: 10%;
 			float: right;
@@ -66,7 +66,7 @@
 		}
 		h2 {
 			font-size: $font-xl;
-		}
+		}  /* <h2></h2> */
 		h4 {
 			font-size: $font-larger;
 			text-shadow: 0 1px 1px $lblack;
@@ -105,14 +105,14 @@
 			@include font-stack-blog;
 			&:hover, &:focus {
 				color: $black!important;
-			}
-		}
+			}  /* a:hover, a:focus */
+		}  /* <a></a> */
 		ul {
 			margin: $med-gap 0;
-			li:before{
+			li:before {
 				content: ">  ";
 				color: $gray;
-			}
+			}  /* li:before */
 			li {
 				letter-spacing: 1px;
 				font-size: 1.35rem;
@@ -123,13 +123,13 @@
 				a:hover, a:focus {
 					color: $blue;
 					transition: 0.2s linear color;
-				}
+				}  /* li:hover, li:focus */
 			}  /* <li></li> */
 		}  /* <ul></ul> */
 		a:hover, a:focus {
 			color: $blue;
 			transition: 0.2s linear color;
-		}
+		}  /* a:hover, a:focus */
 		li {
 			line-height: 1.5rem;
 			letter-spacing: 1px;
@@ -158,15 +158,15 @@
 				letter-spacing: 1px;
 				&:first-child {
 					padding-right: $small-gap;
-				}
-			}
+				}  /* strong:first-child */
+			}  /* <strong></strong> */
 			a {
 				color: $green;
 				&:hover, &:focuss {
 					color: $blue;
 					transition: 0.2s linear color;
-				}
-			}
+				}  /* a:hover, a:focus */
+			}  /* <a></a> */
 			span {
 				font-weight: 700;
 				padding: $med-gap 0;
@@ -177,13 +177,13 @@
 					font-size: $font-large;
 					text-transform: uppercase;
 					font-style: normal;
-				}
+				}  /* <person1></person1>, <person2></person2> */
 				person1 {
 					color: $green;
-				}
+				}  /* <person1></person1> */
 				person2 {
 					color: $blue;
-				}
+				}  /* <person2></person2> */
 			}  /* <span></span> */
 		}  /* <blockquote></blockquote> */
 	}  /* .post-styles */

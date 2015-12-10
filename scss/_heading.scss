@@ -41,7 +41,7 @@ header {
 			display: inline-block;
 			&:first-child {
 				margin-left: 0;
-			}
+			}  /* .nav-item:first-child */
 			.nav-item-link {
 				color: $white;
 				font-size: $font-small;
@@ -50,8 +50,8 @@ header {
 				&:hover, &:focus {
 					color: $green;
 					transition: 0.1s linear color;
-				}
-			}
-		}
-	}
-}
+				}  /* .nav-item-link:hover, .nav-item-link:focus */
+			}  /* .nav-item-link */
+		}  /* .nav-item */
+	}  /* .nav-bar */
+}  /* .nav-container */

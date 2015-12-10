@@ -10,54 +10,54 @@ body {
 h1 {
   font-size: $font-xxxl;
   @include font-stack-brand;
-}
+}  /* <h1></h1> */
 
 h2 {
   font-size: $font-xxl;
   @include font-stack-brand;
-}
+}  /* <h2></h2> */
 
 h3 {
   font-size: $font-large;
   @include font-stack-brand;
-}
+}  /* <h3></h3> */
 
 h4 {
   font-size: $font-large;
   @include font-stack-brand;
-}
+}  /* <h4></h4> */
 
 h5 {
   font-size: $font-med;
   @include font-stack-brand;
-}
+}  /* <h5></h5> */
 
 p {
   line-height: 1;
   color: $lblack;
   font-size: $font-large;
   @include font-stack-brand;
-}
+}  /* <p></p> */
 
 a {
   text-decoration: none;
   display: inline-block;
   color: $blue;
   @include font-stack-brand;
-}
+}  /* <a></a> */
 
 span {
   display: inline-block;
-}
+}  /* <span></span> */
 
 li {
   @include font-stack-brand;
-}
+}  /* <li></li> */
 
 // Makes a piece of text stand out within a body of text
 em {
   font-weight: 700;
-}
+}  /* <em></em> */
 
 .colored {  // used for the about.php page
   color: $green;
@@ -89,9 +89,9 @@ i {
 
 .light-up {
   color: $green;
-}  /* .make-blue */
+}  /* .light-up */
 
 .make-blue {
     border-color: 2px solid $green;
     border-radius: 10em;
-}
+}  /* .make-blue  */
