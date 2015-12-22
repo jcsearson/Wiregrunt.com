@@ -8,9 +8,12 @@ footer {
 	.foot-wrap {
 		width: 100%;
 		color: $lblue;
-		.recent-articles-footer,
-		.footer-nav {
-			padding: $large-gap;
+		.footer-widget,
+		.footer-widget-1,
+		.footer-widget-2,
+		.footer-widget-3,
+		.footer-widget-4 {
+			padding: $large-gap $med-gap;
 			display: inline-block;
 			float: left;
 			.foot-widget-head {
@@ -19,19 +22,19 @@ footer {
 				font-size: $font-med;
 				color: $blue;
 				background: $lblack;
-				margin: $large-gap $small-gap;
+				margin: $large-gap $small-gap $large-gap 0;
 				position: relative;
 			}  /* .foot-widget-head */
 			.foot-widget-link {
 				font-weight: 300;
-				margin: $small-gap;
+				margin: $small-gap $small-gap $small-gap 0;
 				a {
 					font-weight: 300;
 					letter-spacing: 2px;
 					word-spacing: 2px;
 					margin: 3px 0;
 					color: $white;
-					font-size: .85rem;
+					font-size: $font-small;
 					text-shadow: none;
 					@include font-stack-brand;
 					&:hover, &:focus {
@@ -44,15 +47,16 @@ footer {
 		.footer-nav {
 			padding-left: $super-gap;
 		}  /* .footer-nav */
-		.author {
+		.footer-widget {
 			font-weight: 300;
-			padding: $xxxlarge-gap $super-gap 0 0;
-			.author-note {
-				letter-spacing: 1px;
+			padding: $xxxlarge-gap $large-gap;
+			.footer-widget-3-note,
+			.footer-widget-4-note {
+				letter-spacing: 2px;
 				line-height: 1.2;
 				color: $white;
 				padding: 0 0 $med-gap 0;
-				font-size: $font-med;
+				font-size: $font-small;
 				@include font-stack-brand;
 				a {
 					letter-spacing: 2px;
