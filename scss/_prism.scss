@@ -53,7 +53,8 @@ pre[class*="language-"] {
 	> code[class*="language-"] {
 		padding: 1rem;
 		line-height: 2;
-		background: $lblack!important;
+		font-weight: 700;
+		background: $black!important;
 		@include font-stack-code;
 	}  /* code[class*="language-"] */
 }  /* pre[class*="language-"] */
