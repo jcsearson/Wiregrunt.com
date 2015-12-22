@@ -6,23 +6,23 @@ var frame = clock.circle(32, 32, 30).attr({
   stroke: "#302F30",
   strokeWidth: 4
 });
-var hours = clock.rect(29, 18, 6, 22, 3).attr({
-  fill: "#40A73E",
+var hours = clock.rect(31, 17, 2, 23, 3).attr({
+  fill: "#989898",
   stroke: "#1D1D1D",
   strokeWidth: 1
 });
-var minutes = clock.rect(30, 15, 4, 25, 2).attr({
-  fill: "#40A73E",
+var minutes = clock.rect(31, 10, 2, 31, 2).attr({
+  fill: "#989898",
   stroke: "#1D1D1D",
   strokeWidth: 1
 });
 var seconds = clock.path("M30.5,38.625c0,0.828,0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5c0-0.656-0.414-1.202-1-1.406V10.125c0-0.277-0.223-0.5-0.5-0.5s-0.5,0.223-0.5,0.5v27.094C30.914,37.423,30.5,37.969,30.5,38.625z M31,38.625c0-0.552,0.448-1,1-1s1,0.448,1,1s-0.448,1-1,1S31,39.177,31,38.625z").attr({
-  fill: "#F16D68",
+  fill: "#CB2C20",
 });
-var middle = clock.circle(32, 32, 3).attr({
+var middle = clock.circle(32, 32, 2).attr({
   fill: "#1D1D1D",
-  stroke: "#F16D68",
-  strokeWidth: 2
+  stroke: "#CB2C20",
+  strokeWidth: 1
 });
 
 // CLOCK Timer
