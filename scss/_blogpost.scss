@@ -61,6 +61,7 @@
 		}  /* .titled-featured-img */
 	}  /* .meta-box */
 	.post-styles {
+		.post-styles-excerpt { font-size: $font-med!important; }
 		h1, h2, h3, h4, h5, h6 {
 			padding: $xxlarge-gap 0 0 0;
 		}
