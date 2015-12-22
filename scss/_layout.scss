@@ -73,10 +73,10 @@ header {
 
 .contact-page {
 	display: block;
-	margin: 7.5rem auto 7.5rem auto;
-	@include container(12);
+	margin: 7.5rem auto;
+	@include container;
 	.contact-container {
-		@include span(8 of 12 first);
+		@include span(7 of 12 first);
 	}  /* .contact-container */
 }  /* .contact-page */
 
@@ -86,15 +86,9 @@ footer {
 	position: relative;
 	.foot-wrap {
 		@include container;
-		.recent-articles-footer {
-			@include span(4 of 12 first);
-		}  /* .recent-articles-footer */
-		.foot-nav {
-			@include span(4 of 12);
+		.footer-widget {
+			@include span(3 of 12);
 		}  /* .foot-nav */
-		.author {
-			@include span(4 of 12 last);
-		}  /* .author */
 	}  /* .foot-wrap */
 }  /* footer */
 
