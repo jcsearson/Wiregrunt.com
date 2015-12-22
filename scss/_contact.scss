@@ -1,5 +1,6 @@
 .contact-preamble {
-	> h4 {
+	padding: 2rem 2rem 0 2rem;
+	> h2 {
 		padding: 1rem 0;
 	}  /* <h4></h4> */
 	ul {
@@ -18,7 +19,6 @@
 .contact-container {
 	.contact-form {
 		padding: 2rem;
-		border: 2px solid $black;
 		overflow: hidden;
 		input {
 			line-height: 1;
