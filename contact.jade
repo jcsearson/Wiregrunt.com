@@ -2,18 +2,29 @@ include parts/doctype.jade
 body
 	include parts/header.jade
 	div.contact-page
-		div.contact-preamble
-			h2 Looking to get in touch?
-			h4 Fill out a form and I will reach out to you as soon as possible:
-
-		section(class="contact-container" role="form")
-			form(class="contact-form" method="post" action="/contact-send" accept-charset="UTF-8" novalidate autocomplete="off")
+		section(class="contact-container" role="form" ng-app)
+			div.contact-preamble
+				h2 Want to get in touch?
+				p I'm always looking to explore new oppurtunities or discuss web-related things.
+			form(class="contact-form" method="post" action="/contact-send" accept-charset="UTF-8" autocomplete="off" novalidate)
 				fieldset
-					input(type="text" class="user-first-name" placeholder="first" name="user_first_name")
-					input(type="text" class="user-last-name" placeholder="last" name="user_first_name")
-					input(type="email" class="user-email" placeholder="user@webmail.com" name="user_email")
-					textarea(name="user_message", class="user-message", cols="30", rows="10", placeholder="This message is regarding...")
-					button(type="submit" class="user-submission" value="submit" name="submit_form")
+					input(type="text" class="user-first-name" placeholder="first name" name="firstname"
+					ng-model="user.firstname"
+					ng-maxlength="20"
+					ng-required="true")
+					input(type="text" class="user-last-name" placeholder="last name" name="lastname"
+					ng-model="user.lastname"
+					ng-maxlength="20"
+					ng-required="true")
+					input(type="email" class="user-email" placeholder="user@webmail.com" name="email"
+					ng-model="user.email"
+					ng-maxlength="40"
+					ng-required="true")
+					textarea(name="formMessage" class="user-message" cols="30" rows="10" placeholder="This message is regarding..."
+					ng-model="formMessage"
+					ng-maxlength="250"
+					ng-required="true")
+					button(type="submit" class="user-submission" value="submit")
 						include images/icons/svg/blog-media/send-opt.svg
 		include parts/alt-sidebar.jade
 	include parts/footer.jade
