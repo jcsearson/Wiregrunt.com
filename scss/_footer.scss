@@ -87,6 +87,14 @@ footer {
 		.social-media-icon {
 			margin: 0 25%;
 		}  /* .social-media-icon */
+		.stackoverflow-icon:hover .inner-icon,
+		.stackoverflow-icon:focus .inner-icon {
+			@include social-media-styles( $stackoverflow );
+		}
+		.stackoverflow-icon:hover .outer-icon,
+		.stackoverflow-icon:focus .outer-icon {
+			@include social-media-styles( $stackoverflowouter );
+		}
 		.facebook-icon:hover .outer-icon,
 		.facebook-icon:focus .outer-icon {
 			@include social-media-styles( $facebook );
@@ -104,13 +112,11 @@ footer {
 			@include social-media-styles( $github );
 		}  /* .github-icon:hover .outer-icon, .github-icon:focus .outer-icon */
 		.facebook-icon .outer-icon,
-		.facebook-icon .outer-icon,
 		.twitter-icon .outer-icon,
-		.twitter-icon .outer-icon,
-		.linkedin-icon .outer-icon,
 		.linkedin-icon .outer-icon,
 		.github-icon .outer-icon,
-		.github-icon .outer-icon
+		.stackoverflow-icon .outer-icon,
+		.stackoverflow-icon .inner-icon
 		{
 			fill: $dwhite;
 			transition: fill 0.1s linear;
