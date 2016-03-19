@@ -1,14 +1,11 @@
 .blog-post-summary {
 	background: $white;
-	padding: $xlarge-gap $xxxlarge-gap;
-	margin: 0 $med-gap $xxlarge-gap $med-gap;
-	.meta-box {
-		padding-bottom: 5px;
+	padding: $font-small $xxxlarge-gap;
+	margin: 0 $font-small $xxlarge-gap $font-small;
+	> .meta-box {
 		width: 100%;
 		position: relative;
 		display: block;
-		overflow: hidden;
-		border-bottom: 1px solid $gray;
 		.post-title {
 			width: 100%;
 			display: inline-block;
@@ -53,10 +50,10 @@
 			display: inline-block;
 		}  /* .meta-writing */
 		.titled-featured-img {
-			max-width: 10%;
+			height: 100%;
 			float: right;
 			position: absolute;
-			bottom: 5px;
+			bottom: 0;
 			right: 0;
 		}  /* .titled-featured-img */
 	}  /* .meta-box */
