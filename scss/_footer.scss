@@ -43,6 +43,10 @@ footer {
 					}  /* a:hover, a:focus */
 				}  /* <a></a> */
 			}  /* .foot-widget-link */
+			.connect-list {
+				padding: 2.5% 0;
+				overflow: hidden;
+			}
 		}  /* .recent-articles-footer, .footer-nav */
 		.footer-nav {
 			padding-left: $super-gap;
