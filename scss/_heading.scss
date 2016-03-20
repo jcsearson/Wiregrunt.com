@@ -18,9 +18,9 @@ header {
 		text-transform: uppercase;
 		@include font-stack-brand;
 		span {
-			top: 4px;
+			// top: 4px;
 			letter-spacing: 3px;
-			font-size: $font-xl;
+			font-size: $font-large;
 			color: $dwhite;
 			position: relative;
 		}  /* <span></span> */
