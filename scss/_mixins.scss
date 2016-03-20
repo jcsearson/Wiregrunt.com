@@ -9,6 +9,7 @@
       width: 60%;
       margin: 0 20%;
       fill: $social-icon-color;
+      transition: 0.1s linear fill;
 }  /* social-media-styles */
 @mixin sidebar-styles( $padding, $background-color ) {
       padding: $padding;
